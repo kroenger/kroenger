@@ -7,7 +7,7 @@ export const ecofriendlytips = [
     {
         tipNumber:2,
         tip: "Make instant dish wash using lemon and salt for simple and eco-friendly washing.",
-        hashtags:["lemon","instandishwash","homecare"]
+        hashtags:["lemon","instantdishwash","homecare"]
     },
     {
         tipNumber:3,
