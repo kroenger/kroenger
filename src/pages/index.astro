@@ -1,0 +1,349 @@
+---
+import Social from "../components/Social.astro";
+import Layout from "../layouts/Layout.astro";
+import { MobileMenu } from "../components/MobileMenu.jsx";
+---
+
+<Layout title="Home" description="Kroenger is an environment related content creator" isHome={true}>
+  <div class="wrapper">
+    <div class="indexNavBar">
+      <div><img src="kroenger_logo_transparent.png" alt="kroenger" /></div>
+      <div class="menuList">
+        <MobileMenu client:visible />
+        <a href="about" aria-label="about"><div>About</div></a>
+        <a href="eco-friendly-tips" aria-label="eco-friendly-tips"><div>Eco-friendly Tips</div></a>
+        <a href="calendar" aria-label="calendar"><div>Calendar</div></a>
+        <a href="https://www.typinks.com/categories/kroenger.html"
+           aria-label="blog"><div>Blog</div>
+        </a>
+      </div>
+    </div>
+    <div class="headerText">
+      <h2>Sustainable things are rare</h2>
+      <h1>SCAVENGE TO SURVIVE</h1>
+      <a href="#about" aria-label="learn more">
+        <button class="learnMoreButtonHome">Learn More!</button>
+      </a>
+    </div>
+    <div class="home-1"></div>
+    <div class="aboutUs" id="about">
+      <h2>About us</h2>
+      <h1>The planet is no more living, but is surviving tough challenges.</h1>
+      <p>
+        Climate change, Booming population, Degrading ecosystems, etc. are some
+        of the devastating situations we are going through. Adverse climatic
+        conditions, lack of natural resources and reduce in ecosystem services
+        had put the life of all living beings at stake. In the global level, UN
+        and other governmental and non-governmental organizations are on the
+        path to uphold the need of a paradigm shift in the economy to mitigate
+        the future adverse conditions. It is high time that we shift from a
+        profit driven economy to a sustainable one.
+      </p>
+      <p>
+        Kroenger is a not-for-profit organization formed to promote recycling
+        and reusing to ensure sustainable development and responsible
+        consumption. Our aim is to create an alert community that strives for a
+        Sustainable and Eco friendly future.
+      </p>
+    </div>
+    <div class="moreInfo">
+      <div class="infoList">
+        <div>
+          We don’t inherit the earth from our ancestors, we borrow it from our
+          children
+        </div>
+        <h2>You know the basics, yah that's it.</h2>
+        <hr />
+        <h2>Reuse</h2>
+        <div>Simply reuse things that get your objectives done.</div>
+        <hr />
+        <h2>Reduce</h2>
+        <div>
+          Reduce as much as you can because "use less" is not that useless
+        </div>
+        <hr />
+        <h2>Recycle</h2>
+        <div>Recycle is the key to sustainability</div>
+      </div>
+      <div class="quote">
+        Things won't get sustainable easily, but once you establish your
+        benchmark, you yourself can change the world!
+      </div>
+    </div>
+    <div class="home-2"></div>
+    <div class="social">
+      <Social />
+    </div>
+  </div>
+</Layout>
+
+<style>
+  :root {
+    --astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
+  }
+
+  h1 {
+    margin: 2rem 0;
+  }
+
+  main {
+    max-width: 60ch;
+  }
+
+  .indexNavBar {
+    width: 100%;
+    height: 2vh;
+    position: absolute;
+    z-index: 6;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem 3rem 3rem;
+  }
+
+  .indexNavBar > div {
+    width: 60%;
+  }
+
+  .indexNavBar > div > img {
+    width: 13rem;
+  }
+
+  .menuList {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    margin-top: 2.1rem;
+  }
+
+  .menuList > a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .menuList > a > div:hover {
+    transform: scale(1.2);
+    color: var(--bg-primary);
+  }
+
+  .learnMoreButtonHome {
+    cursor: pointer;
+    width: 10rem;
+    height: 3rem;
+    color: var(--bg-secondary);
+    background-color: var(--bg-primary);
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+    padding: 1%;
+    border: 0;
+    font-weight: bold;
+  }
+
+  .learnMoreButtonHome:hover {
+    background-color: var(--bg-secondary);
+    color: var(--bg-primary);
+  }
+
+  .aboutUs {
+    position: relative;
+    text-align: center;
+    padding-inline: 20%;
+    padding-block: 5%;
+    height: 85vh;
+    z-index: 2;
+    background-color: white;
+    font-size: 1.5rem;
+  }
+
+  .headerText {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    color: white;
+    height: 105vh;
+    width: 100vw;
+    padding-inline: auto;
+    background: rgba(1, 22, 39, 0.5);
+  }
+
+  .social {
+    position: relative;
+    text-align: center;
+    min-height: 25vh;
+    z-index: 2;
+    background-color: white;
+  }
+
+  .wrapper {
+    height: 100vh;
+    width: 100vw;
+    perspective: 10px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .moreInfo {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 5;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(1, 22, 39, 0.65);
+  }
+
+  .infoList {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    width: 34%;
+  }
+
+  .infoList > h2 {
+    font-size: 1.8rem;
+  }
+
+  .infoList > div {
+    text-align: left;
+    color: #b3b3b3;
+    padding-block: 1rem;
+  }
+
+  .infoList > div:nth-child(1) {
+    text-align: left;
+    color: #b3b3b3;
+    padding-block: 1rem;
+  }
+
+  .infoList > hr {
+    width: 100%;
+    background-color: aqua;
+    height: 0.0102rem;
+  }
+
+  .quote {
+    font-size: 3rem;
+    width: 34%;
+    font-weight: bold;
+  }
+
+  .home-1,
+  .home-2 {
+    z-index: -1;
+  }
+
+  /* Small screens */
+  @media only screen and (max-width: 600px) {
+    .indexNavBar > div > img {
+      width: 10rem;
+    }
+
+    .headerText {
+      height: 100vh;
+    }
+
+    .headerText > h1 {
+      padding-inline: 3rem;
+      text-align: center;
+    }
+
+    .aboutUs {
+      height: 100vh;
+      font-size: 1rem;
+    }
+
+    .aboutUs > h1 {
+      font-size: 1.9rem;
+    }
+
+    .moreInfo {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .infoList {
+      display: flex;
+      flex-direction: column;
+      font-size: 1rem;
+      font-weight: bolder;
+      width: 85%;
+    }
+
+    .infoList > h2 {
+      font-size: 1.4rem;
+    }
+
+    .infoList > div {
+      text-align: center;
+      color: #b3b3b3;
+      padding: 0;
+    }
+
+    .infoList > div:nth-child(1) {
+      text-align: center;
+      color: #b3b3b3;
+    }
+
+    .infoList > hr {
+      width: 100%;
+      background-color: aqua;
+      height: 0.0102rem;
+    }
+
+    .quote {
+      width: 90%;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .menuList > a {
+      display: none;
+    }
+
+    .menuList {
+      margin-top: 1.1rem;
+    }
+
+    .home-1 {
+      width: 100vw;
+      height: 100vh;
+      background-size: 100% 100%;
+      background-image: url("../home-mobile-1.jpeg");
+    }
+
+    .home-2 {
+      width: 100vw;
+      height: 100vh;
+      background-size: 150% 100%;
+      background-image: url("../home-2.jpeg");
+    }
+  }
+
+  /* Large screens */
+  @media only screen and (min-width: 600px) {
+    .home-1 {
+      width: 100%;
+      height: 105vh;
+      background-size: 100% 100%;
+      background-image: url("../home-1.jpeg");
+      transform: translateZ(-40px) scale(8);
+    }
+
+    .home-2 {
+      width: 100%;
+      height: 100%;
+      background-size: 100% 100%;
+      background-image: url("../home-2.jpeg");
+      transform: translateZ(-10px) scale(2);
+    }
+  }
+</style>

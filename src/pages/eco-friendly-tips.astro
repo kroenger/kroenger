@@ -1,0 +1,53 @@
+---
+import { ecofriendlytips } from "../assets/ecofriendlytips";
+import Ecofriendlytips from "../components/Ecofriendlytips.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Eco-friendly tips"
+  description="Eco-friendly tips are beneficial for you and the planet together."
+  activePage="tips"
+>
+  <div class="wrapper">
+    <h1>Eco-friendly Tips</h1>
+    <h2><i>"be the change you want to see"</i></h2>
+
+    <div class="tipsContainer">
+      {
+        ecofriendlytips.map(ecotip => <Ecofriendlytips
+        tip={ecotip.tip}
+        hashtags={ecotip.hashtags}
+        tipNumber={ecotip.tipNumber}
+      />)
+      }
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .wrapper {
+    margin-inline: 17rem;
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  .tipsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    gap: 4rem;
+    margin: 5rem 0%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .wrapper {
+      margin-inline: 0;
+      margin-top: 0;
+      margin-bottom: 6rem;
+    }
+    .tipsContainer {
+      margin-inline: 15%;
+      margin-bottom: 5rem;
+    }
+  }
+</style>

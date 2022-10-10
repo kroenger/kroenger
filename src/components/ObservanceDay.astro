@@ -1,0 +1,50 @@
+---
+interface Props {
+  date: string;
+  day: string;
+  description: string;
+}
+const { date, day, description } = Astro.props;
+---
+
+<div class="observanceDayCard">
+  <article>
+    <div class="dayDate">{date}</div>
+    <div class="dayTitle">{day}</div>
+    <div class="description">{description}</div>
+  </article>
+</div>
+
+<style>
+  .observanceDayCard {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 11%;
+    color: white;
+    background: rgb(40, 95, 64, 0.9);
+    padding: 0 1.5rem 1.5rem;
+    box-shadow: 8px 8px #a1d783;
+  }
+
+  .dayTitle {
+    font-size: 1.8rem;
+    font-weight: bolder;
+  }
+
+  .dayDate {
+    background: #a1d783;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #285f40;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+    border-radius: 1rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+</style>

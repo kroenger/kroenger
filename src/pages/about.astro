@@ -1,0 +1,118 @@
+---
+import Social from "../components/Social.astro";
+import Team from "../components/Team.astro";
+import Layout from "../layouts/Layout.astro";
+
+const teams = [
+  {
+    name: "Celestine John Kenneth",
+    position: "Scientific Advisor",
+    image: "celestin.jpeg",
+  },
+  {
+    name: "Jonathan Edward",
+    position: "Scientific Advisor",
+    image: "jonathan.jpeg",
+  },
+  {
+    name: "Judeson George",
+    position: "Scientific Advisor",
+    image: "judeson.jpeg",
+  },
+  {
+    name: "Christo Jackson",
+    position: "Content Creator",
+    image: "christo.jpeg",
+  },
+  {
+    name: "Ashly Augustine",
+    position: "Content Creator",
+    image: "ashly.jpg",
+  },
+  {
+    name: "Augustine Ashal",
+    position: "Community Manager",
+    image: "augustine.jpg",
+  },
+  {
+    name: "Reynold Stephen",
+    position: "Legal Advisor",
+    image: "reynold.jpeg",
+  },
+];
+---
+
+<Layout
+  title="About"
+  description="Kroenger is a not-for-profit organization that envisaged creating a network of sustainability enthusiasts."
+  activePage="about"
+>
+  <div class="wrapper">
+    <h1>About Kroenger</h1>
+    <p class="description">
+      Anthropogenic activities are holding massive pressure on the ecosystem.
+      Hence effective lifestyle changes are to be adopted immediately for a
+      sustainable future. Recycling and Reusing has the potential to be an
+      important strategy for long run sustainability. The sustainable goals
+      adopted as a part of agenda 2030 by UN Membership States points to a
+      direction in this path. The SDG12 made to ensures sustainable consumption
+      and production pattern, challenges us to rethink on liners,
+      make-take-waste models and provides an important call to action for
+      business and consumers.
+    </p>
+    <br />
+    <br />
+    <h2>Meet the team</h2>
+    <div class="grid">
+      {
+        teams.map((team) => (
+          <Team image={team.image} position={team.position} name={team.name} />
+        ))
+      }
+    </div>
+    <div>
+      <Social />
+    </div>
+  </div>
+</Layout>
+
+<style>
+  h1 {
+    text-align: center;
+  }
+
+  .description {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .wrapper {
+    margin-inline: 17rem;
+    margin-top: 5rem;
+  }
+
+  .grid {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    margin-bottom: 4rem;
+  }
+
+  /* Small screens */
+  @media only screen and (max-width: 600px) {
+    .wrapper {
+      margin-inline: 0;
+      margin-top: 0;
+      margin-bottom: 6rem;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    .description {
+      margin: 1rem;
+    }
+  }
+</style>

@@ -1,0 +1,427 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  isHome?: boolean;
+  activePage?: string;
+}
+
+const { title, description, isHome, activePage } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{title} | Kroenger</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1" />
+
+    <meta name="description" content={description} />
+    <meta name="image" content={Astro.url} />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content={Astro.url} />
+    <meta
+      property="og:image"
+      content="https://kroenger.org/logo.png"
+    />
+    <meta property="og:description" content={description} />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kroenger" />
+    <meta name="twitter:creator" content="@kroenger" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta
+      name="twitter:image"
+      content="https://kroenger.org/logo.png"
+    />
+
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" type="image/x-icon" href="/logo.png" />
+  </head>
+  <body>
+    {
+      !isHome ? (
+        <nav class="navbar">
+          <ul class="navbar-nav">
+            <li class="logo">
+              <a href="/" class="nav-link" aria-label="home">
+                <span class="link-text logo-text">Kroenger</span>
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fad"
+                  data-icon="angle-double-right"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
+                >
+                  <g class="fa-group">
+                    <path
+                      fill="currentColor"
+                      d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
+                      class="fa-secondary"
+                    />
+                    <path
+                      fill="currentColor"
+                      d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
+                      class="fa-primary"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="/"
+                class={activePage == "home" ? `nav-link active` : `nav-link`}
+                aria-label="home"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                  <path
+                    class="fa-secondary"
+                    d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 
+                .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 
+                40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 
+                10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+                  />
+                </svg>
+                <span class="link-text">Home</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="/about"
+                class={activePage == "about" ? `nav-link active` : `nav-link`}
+                aria-label="about"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    class="fa-secondary"
+                    d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 
+              0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 
+              24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z"
+                  />
+                </svg>
+                <span class="link-text">About</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="/calendar"
+                class={
+                  activePage == "calendar" ? `nav-link active` : `nav-link`
+                }
+                aria-label="calendar"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    class="fa-secondary"
+                    d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 
+                64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 
+                0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 
+                0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 
+                16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 
+                0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"
+                  />
+                </svg>
+                <span class="link-text">Calendar</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="/eco-friendly-tips"
+                class={activePage == "tips" ? `nav-link active` : `nav-link`}
+                aria-label="eco-friendly-tips"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    class="fa-secondary"
+                    d="M272 96c-78.6 0-145.1 51.5-167.7 122.5c33.6-17 71.5-26.5 111.7-26.5h88c8.8 0 16 7.2 16 16s-7.2 16-16 16H288 216s0 0 0 0c-16.6 0-32.7 
+              1.9-48.3 5.4c-25.9 5.9-49.9 16.4-71.4 30.7c0 0 0 0 0 0C38.3 298.8 0 364.9 0 440v16c0 13.3 10.7 24 24 24s24-10.7 24-24V440c0-48.7 20.7-92.5 
+              53.8-123.2C121.6 392.3 190.3 448 272 448l1 0c132.1-.7 239-130.9 239-291.4c0-42.6-7.5-83.1-21.1-119.6c-2.6-6.9-12.7-6.6-16.2-.1C455.9 72.1 
+              418.7 96 376 96L272 96z"
+                  />
+                </svg>
+                <span class="link-text">Tips</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="https://www.typinks.com/categories/kroenger.html"
+                class={activePage == "blog" ? `nav-link active` : `nav-link`}
+                aria-label="blog"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    class="fa-secondary"
+                    d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 
+              96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 
+              48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
+                  />
+                </svg>
+                <span class="link-text">Blog</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      ) : null
+    }
+    <main>
+      <slot />
+    </main>
+    <style>
+      .navbar {
+        position: fixed;
+        background-color: var(--bg-primary);
+        width: 5rem;
+        height: 100vh;
+        transition: width 600ms ease;
+      }
+
+      .navbar-nav {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+      }
+
+      .nav-item {
+        width: 100%;
+      }
+
+      .nav-item:last-child {
+        margin-top: auto;
+      }
+
+      .navbar:hover {
+        width: 16rem;
+      }
+      .nav-link {
+        display: flex;
+        align-items: center;
+        height: 5rem;
+        color: var(--bg-secondary);
+        text-decoration: none;
+        transition: var(--transition-speed);
+      }
+
+      .nav-link:hover {
+        background: var(--bg-secondary);
+        color: var(--bg-primary);
+      }
+
+      .nav-link:hover .fa-primary {
+        color: var(--bg-secondary);
+        fill: var(--bg-secondary);
+      }
+
+      .nav-link:hover .fa-secondary {
+        color: var(--bg-primary);
+        fill: var(--bg-primary);
+      }
+
+      .link-text {
+        display: none;
+        margin-left: 1rem;
+      }
+
+      .nav-link svg {
+        width: 2rem;
+        min-width: 2rem;
+        margin: 0 1.5rem;
+      }
+
+      .fa-secondary {
+        color: var(--bg-secondary);
+        fill: var(--bg-secondary);
+      }
+
+      .fa-primary {
+        color: var(--bg-primary);
+        fill: var(--bg-primary);
+      }
+
+      .fa-primary,
+      .fa-secondary {
+        transition: var(--transition-speed);
+      }
+      .logo {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        text-align: center;
+        color: var(--bg-secondary);
+        background: var(--bg-secondary);
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.3ch;
+        width: 100%;
+      }
+
+      .logo svg {
+        transform: rotate(0deg);
+        transition: var(--transition-speed);
+        margin-left: 1rem;
+      }
+
+      @font-face {
+        font-family: logotext;
+        src: url(logotextfont.ttf);
+      }
+
+      .logo-text {
+        display: inline;
+        position: absolute;
+        left: -999px;
+        transition: var(--transition-speed);
+        font-family: logotext;
+        color: var(--bg-primary);
+      }
+
+      .navbar:hover .logo svg {
+        transform: rotate(-180deg);
+      }
+
+      .active {
+        background: var(--bg-secondary);
+        color: var(--bg-primary);
+      }
+
+      .active .fa-primary {
+        color: var(--bg-secondary);
+        fill: var(--bg-secondary);
+      }
+
+      .active .fa-secondary {
+        color: var(--bg-primary);
+        fill: var(--bg-primary);
+      }
+
+      /* Small screens */
+      @media only screen and (max-width: 600px) {
+        .navbar {
+          bottom: 0;
+          width: 100vw;
+          height: 5rem;
+        }
+
+        .navbar:hover {
+          bottom: 0;
+          width: 100vw;
+          height: 5rem;
+        }
+
+        .logo {
+          display: none;
+        }
+
+        .navbar-nav {
+          flex-direction: row;
+        }
+
+        .nav-link {
+          justify-content: center;
+        }
+
+        main {
+          margin: 0;
+        }
+      }
+
+      /* Large screens */
+      @media only screen and (min-width: 600px) {
+        .navbar {
+          top: 0;
+          width: 5rem;
+          height: 100vh;
+        }
+
+        .navbar:hover .link-text {
+          display: inline;
+        }
+
+        .navbar:hover .logo svg {
+          margin-left: 12rem;
+        }
+
+        .navbar:hover .logo-text {
+          left: 0px;
+        }
+      }
+    </style>
+
+    <style is:global>
+      :root {
+        --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+        --font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
+        --font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+
+        --color-text: hsl(12, 5%, 4%);
+        --color-bg: hsl(10, 21%, 95%);
+        --color-border: hsl(17, 24%, 90%);
+
+        font-size: 16px;
+        font-family: "Poppins", sans-serif;
+        background-color: white;
+        --bg-primary: #a1d783;
+        --bg-secondary: #285f40;
+        --bg-secondary: #285f40;
+        --bg-primary: #a1d783;
+        --transition-speed: 400ms;
+      }
+
+      html {
+        font-family: system-ui, sans-serif;
+        font-size: var(--font-size-base);
+        color: var(--color-text);
+        background-color: var(--color-bg);
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body::-webkit-scrollbar {
+        width: 0.25rem;
+      }
+
+      body::-webkit-scrollbar-track {
+        background: #285f40;
+      }
+
+      body::-webkit-scrollbar-thumb {
+        background: #a1d783;
+      }
+      h1 {
+        font-size: var(--font-size-xl);
+      }
+
+      ::selection {
+        color: var(--bg-primary);
+        background: var(--bg-secondary);
+      }
+    </style>
+  </body>
+</html>

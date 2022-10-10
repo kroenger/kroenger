@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Social from "../components/Social.astro";
+---
+
+<Layout
+  title="Social"
+  description="let's make things more sustainable together"
+  activePage="social"
+>
+  <div class="wrapper">
+    <Social />
+  </div>
+</Layout>
+
+<style>
+  .wrapper {
+    margin: 5%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .wrapper {
+      margin: 5% 0;
+    }
+  }
+</style>
