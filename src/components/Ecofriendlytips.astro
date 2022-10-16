@@ -5,7 +5,7 @@ interface Props {
   hashtags: string[];
 }
 
-const { tipNumber, tip, hashtags } = Astro.props;
+const { tipNumber, tip, hashtags = [] } = Astro.props;
 const newHashtags = [...hashtags, "ecofriendlytips", "kroenger"];
 
 const getShuffledArr = (arr: string[]) => {
@@ -18,23 +18,25 @@ const getShuffledArr = (arr: string[]) => {
 };
 const newRandomHashtags = getShuffledArr(newHashtags);
 
-function onlyUnique(value:any, index:any, self:any) {
+function onlyUnique(value: any, index: any, self: any) {
   return self.indexOf(value) === index;
 }
-const uniqueHashtags = newRandomHashtags.filter(onlyUnique)
+const uniqueHashtags = newRandomHashtags.filter(onlyUnique);
 ---
 
 <div class="tipsCard">
-  <div class="image">
-    <img src={`../tips/${tipNumber}.webp`} alt={tip} />
-  </div>
-  <div class="tipNumber">Eco friendly tip #{tipNumber}</div>
-  <div class="tip">
-    {tip}
-  </div>
-  <div class="hashtags">
-    {uniqueHashtags.map((hashtag) => <div class="hashtag">#{hashtag}</div>)}
-  </div>
+  <article>
+    <div class="image">
+      <img src={`../tips/${tipNumber}.webp`} alt={tip} />
+    </div>
+    <h3 class="tipNumber">Eco friendly tip #{tipNumber}</h3>
+    <p class="tip">
+      {tip}
+    </p>
+    <div class="hashtags">
+      {uniqueHashtags.map((hashtag) => <div class="hashtag">#{hashtag}</div>)}
+    </div>
+  </article>
 </div>
 
 <style>
@@ -44,7 +46,7 @@ const uniqueHashtags = newRandomHashtags.filter(onlyUnique)
     box-shadow: 0 10px 15px -3px hsl(148, 41%, 29%),
       0 4px 6px -2px hsl(147, 41%, 29%);
   }
-  .tipsCard > :nth-child(n):not(.image) {
+  .tipsCard > article > :nth-child(n):not(.image) {
     padding-inline: 1rem;
     text-align: left;
   }
@@ -83,7 +85,7 @@ const uniqueHashtags = newRandomHashtags.filter(onlyUnique)
       box-shadow: 0 10px 15px -3px hsl(148, 41%, 29%),
         0 4px 6px -2px hsl(147, 41%, 29%);
     }
-    .tipsCard > :nth-child(n):not(.image) {
+    .tipsCard > article > :nth-child(n):not(.image) {
       padding-inline: 1rem;
       text-align: left;
     }

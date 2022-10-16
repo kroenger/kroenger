@@ -10,18 +10,22 @@ import Layout from "../layouts/Layout.astro";
   activePage="tips"
 >
   <div class="wrapper">
-    <h1>Eco-friendly Tips</h1>
-    <h2><i>"be the change you want to see"</i></h2>
+    <article>
+      <h1>Eco-friendly Tips</h1>
+      <h2><i>"be the change you want to see"</i></h2>
 
-    <div class="tipsContainer">
-      {
-        ecofriendlytips.map(ecotip => <Ecofriendlytips
-        tip={ecotip.tip}
-        hashtags={ecotip.hashtags}
-        tipNumber={ecotip.tipNumber}
-      />)
-      }
-    </div>
+      <div class="tipsContainer">
+        {
+          ecofriendlytips.map((ecotip) => (
+            <Ecofriendlytips
+              tip={ecotip.tip}
+              hashtags={ecotip.hashtags}
+              tipNumber={ecotip.tipNumber}
+            />
+          ))
+        }
+      </div>
+    </article>
   </div>
 </Layout>
 
