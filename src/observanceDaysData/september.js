@@ -1,5 +1,11 @@
 export const september = [
     {
+        date: "First Saturday of September",
+        day: "International Vulture Awareness Day",
+        description: `Vultures are ecologically vital and are now the most threatened group of 
+        birds in the world; populations of many species are under pressure and some are facing extinction.`
+    },
+    {
         date: "16 September",
         day: "World Ozone Day",
         description: `This years theme is "Montreal Protocol - Keeping us,

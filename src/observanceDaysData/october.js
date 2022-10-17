@@ -6,6 +6,35 @@ export const october = [
         suffered by some farm animals, and promote awareness against cruelty.`
     },
     {
+        date: "First Monday of October",
+        day: "World Habitat Day",
+        description: `This day is intended to remind the world of its collective responsibility for the future of the human habitat. 
+        This years theme is "Mind the Gap. Leave No One and No Place Behind'`
+    },
+    {
+        date: "4 October",
+        day: "World Animal Day",
+        description: `To raise the status of animals in order to improve welfare standards around the globe. 
+        Through increased awareness and education we can create a world where animals are always 
+        recognised as sentient beings and full regard is always paid to their welfare.`
+    },
+    {
+        date: "8 October",
+        day: "World Migratory Bird Day",
+        description: `an annual awareness-raising campaign highlighting the need for the conservation of migratory birds and their habitats`
+    },
+    {
+        date: "13 October",
+        day: "International Day for Disaster Reduction",
+        description: `This year's theme is 'From Risk to Resilience: Towards Sustainable Development For All in a COVID-19 Transformed World'.`
+    },
+    {
+        date: "14 October",
+        day: "International E-Waste Day",
+        description: `This year, the main focus of International E-Waste Day will be those small electrical 
+        devices that we no longer use but keep in drawers and cupboards or often toss in the general waste bin.`
+    },
+    {
         date: "16 October",
         day: "World Food Day",
         description: `This years theme will be 'leave no one behind’. Indigenous Peoples are
