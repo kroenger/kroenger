@@ -3,7 +3,7 @@ export const november = [
         date: "1 November",
         day: "World Vegan Day",
         description: `Veganism is the practice of abstaining from the use of animal products, particularly in diet. 
-        Vegan food reduces the risks of many diseases and provides you with healthier alternatives to satiate your cravings. `
+        Vegan food reduces the risks of many diseases and provides you with healthier alternatives to satiate your cravings.`
     },
     {
         date: "6 November",

@@ -11,7 +11,7 @@ interface Props {
   }[];
 }
 const { month, data,currentMonth } = Astro.props;
-let monthLowercase = month;
+let monthLowercase = month.toLowerCase();
 ---
 
 <div class="tabs">
