@@ -1,0 +1,144 @@
+---
+import ObservanceDay from "./ObservanceDay.astro";
+
+interface Props {
+  month: string;
+  currentMonth: string;
+  data: {
+    date: string;
+    day: string;
+    description: string;
+  }[];
+}
+const { month, data,currentMonth } = Astro.props;
+let monthLowercase = month;
+---
+
+<div class="tabs">
+  <div class="tab">
+    <input
+      type="checkbox"
+      id={monthLowercase}
+      checked={monthLowercase == currentMonth ? true : false}
+    />
+    <label class="tab-label" for={monthLowercase}>{month}</label>
+    <div class="tab-content">
+      <div class="observanceDaysGrid">
+        {
+          data.map((observanceDay: any) => (
+            <ObservanceDay
+              date={observanceDay.date}
+              day={observanceDay.day}
+              description={observanceDay.description}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</div>
+
+<br />
+
+<style lang="scss">
+  
+    .observanceDaysGrid {
+      display: grid;
+      gap: 2.5rem;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      margin-bottom: 4rem;
+    }
+  
+    /* Small screens */
+    @media only screen and (max-width: 600px) {
+  
+      .observanceDaysGrid,
+      .tabs {
+        margin: 5%;
+      }
+    }
+  
+    $midnight: #285f40;
+    $clouds: #ecf0f1;
+  
+    input {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+    }
+    // Layout
+    .row {
+      display: flex;
+      .col {
+        flex: 1;
+        &:last-child {
+          margin-left: 1em;
+        }
+      }
+    }
+    /* Accordion styles */
+    .tabs {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+    }
+    .tab {
+      width: 100%;
+      color: white;
+      overflow: hidden;
+      font-size: 1.5rem;
+      &-label {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        background: $midnight;
+        font-weight: bold;
+        cursor: pointer;
+        /* Icon */
+        &:hover {
+          background: darken($midnight, 10%);
+        }
+        &::after {
+          content: "\276F";
+          width: 1em;
+          height: 1em;
+          text-align: center;
+          transition: all 0.55s;
+        }
+      }
+      &-content {
+        display: none;
+        max-height: 0;
+        padding: 0 1em;
+        color: $midnight;
+        background: white;
+        transition: all 0.55s;
+      }
+      &-close {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1em;
+        font-size: 0.75em;
+        background: $midnight;
+        cursor: pointer;
+        &:hover {
+          background: darken($midnight, 10%);
+        }
+      }
+    }
+  
+    // :checked
+    input:checked {
+      + .tab-label {
+        background: darken($midnight, 10%);
+        &::after {
+          transform: rotate(90deg);
+        }
+      }
+      ~ .tab-content {
+        max-height: 100%;
+        padding: 1em;
+        display: block;
+      }
+    }
+  </style>
