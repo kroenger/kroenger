@@ -1,5 +1,5 @@
 ---
-import ObservanceDay from "../components/ObservanceDay.astro";
+import Observancedaytab from "../components/Observancedaytab.astro";
 import Social from "../components/Social.astro";
 import Layout from "../layouts/Layout.astro";
 import { april } from "../observanceDaysData/april";
@@ -15,7 +15,7 @@ import { november } from "../observanceDaysData/november";
 import { october } from "../observanceDaysData/october";
 import { september } from "../observanceDaysData/september";
 
-const month = [
+const months = [
   "January",
   "February",
   "March",
@@ -30,8 +30,30 @@ const month = [
   "December",
 ];
 
+const datas = [
+  january,
+  february,
+  march,
+  april,
+  may,
+  june,
+  july,
+  august,
+  september,
+  october,
+  november,
+  december,
+];
+
+const reorderItems = (arr: any, pos: number) => {
+  return [...arr.slice(pos), ...arr.slice(0, pos)];
+};
+
 const d = new Date();
-let name = month[d.getMonth()].toLowerCase();
+const monthIndex = d.getMonth();
+const RearrangedData = reorderItems(datas, monthIndex);
+const RearrangedMonths = reorderItems(months, monthIndex);
+let currentMonth = months[monthIndex].toLowerCase();
 ---
 
 <Layout
@@ -51,316 +73,19 @@ let name = month[d.getMonth()].toLowerCase();
       <br />
       <br />
 
-      <div class="tabs">
-        <div class="tab">
-          <input
-            type="checkbox"
-            id="january"
-            checked={name == "january" ? true : false}
-          />
-          <label class="tab-label" for="january">January</label>
-          <div class="tab-content">
-            <div class="observanceDaysGrid">
-              {
-                january.map((observanceDay) => (
-                  <ObservanceDay
-                    date={observanceDay.date}
-                    day={observanceDay.day}
-                    description={observanceDay.description}
-                  />
-                ))
-              }
-            </div>
-          </div>
-        </div>
-      </div>
+      {
+        RearrangedData.map((data, i) => {
+          return (
+            <Observancedaytab
+              data={data}
+              month={RearrangedMonths[i].toLowerCase()}
+              currentMonth={currentMonth}
+            />
+          );
+        })
+      }
 
       <br />
-
-      <div class="tabs">
-        <div class="tab">
-          <input
-            type="checkbox"
-            id="february"
-            checked={name == "february" ? true : false}
-          />
-          <label class="tab-label" for="february">February</label>
-          <div class="tab-content">
-            <div class="observanceDaysGrid">
-              {
-                february.map((observanceDay) => (
-                  <ObservanceDay
-                    date={observanceDay.date}
-                    day={observanceDay.day}
-                    description={observanceDay.description}
-                  />
-                ))
-              }
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <br />
-
-      <div class="tabs">
-        <div class="tab">
-          <input
-            type="checkbox"
-            id="march"
-            checked={name == "march" ? true : false}
-          />
-          <label class="tab-label" for="march">March</label>
-          <div class="tab-content">
-            <div class="observanceDaysGrid">
-              {
-                march.map((observanceDay) => (
-                  <ObservanceDay
-                    date={observanceDay.date}
-                    day={observanceDay.day}
-                    description={observanceDay.description}
-                  />
-                ))
-              }
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <br />
-
-      <div class="tabs">
-        <div class="tab">
-          <input
-            type="checkbox"
-            id="april"
-            checked={name == "april" ? true : false}
-          />
-          <label class="tab-label" for="april">April</label>
-          <div class="tab-content">
-            <div class="observanceDaysGrid">
-              {
-                april.map((observanceDay) => (
-                  <ObservanceDay
-                    date={observanceDay.date}
-                    day={observanceDay.day}
-                    description={observanceDay.description}
-                  />
-                ))
-              }
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <br />
-
-      <div class="tabs">
-        <div class="tab">
-          <input
-            type="checkbox"
-            id="may"
-            checked={name == "may" ? true : false}
-          />
-          <label class="tab-label" for="may">May</label>
-          <div class="tab-content">
-            <div class="observanceDaysGrid">
-              {
-                may.map((observanceDay) => (
-                  <ObservanceDay
-                    date={observanceDay.date}
-                    day={observanceDay.day}
-                    description={observanceDay.description}
-                  />
-                ))
-              }
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <br />
-
-      <div class="tabs">
-        <div class="tab">
-          <input
-            type="checkbox"
-            id="june"
-            checked={name == "june" ? true : false}
-          />
-          <label class="tab-label" for="june">June</label>
-          <div class="tab-content">
-            <div class="observanceDaysGrid">
-              {
-                june.map((observanceDay) => (
-                  <ObservanceDay
-                    date={observanceDay.date}
-                    day={observanceDay.day}
-                    description={observanceDay.description}
-                  />
-                ))
-              }
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <br />
-
-      <div class="tabs">
-        <div class="tab">
-          <input
-            type="checkbox"
-            id="july"
-            checked={name == "july" ? true : false}
-          />
-          <label class="tab-label" for="july">July</label>
-          <div class="tab-content">
-            <div class="observanceDaysGrid">
-              {
-                july.map((observanceDay) => (
-                  <ObservanceDay
-                    date={observanceDay.date}
-                    day={observanceDay.day}
-                    description={observanceDay.description}
-                  />
-                ))
-              }
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <br />
-
-      <div class="tabs">
-        <div class="tab">
-          <input
-            type="checkbox"
-            id="august"
-            checked={name == "august" ? true : false}
-          />
-          <label class="tab-label" for="august">August</label>
-          <div class="tab-content">
-            <div class="observanceDaysGrid">
-              {
-                august.map((observanceDay) => (
-                  <ObservanceDay
-                    date={observanceDay.date}
-                    day={observanceDay.day}
-                    description={observanceDay.description}
-                  />
-                ))
-              }
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <br />
-
-      <div class="tabs">
-        <div class="tab">
-          <input
-            type="checkbox"
-            id="september"
-            checked={name == "september" ? true : false}
-          />
-          <label class="tab-label" for="september">September</label>
-          <div class="tab-content">
-            <div class="observanceDaysGrid">
-              {
-                september.map((observanceDay) => (
-                  <ObservanceDay
-                    date={observanceDay.date}
-                    day={observanceDay.day}
-                    description={observanceDay.description}
-                  />
-                ))
-              }
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <br />
-
-      <div class="tabs">
-        <div class="tab">
-          <input
-            type="checkbox"
-            id="october"
-            checked={name == "october" ? true : false}
-          />
-          <label class="tab-label" for="october">October</label>
-          <div class="tab-content">
-            <div class="observanceDaysGrid">
-              {
-                october.map((observanceDay) => (
-                  <ObservanceDay
-                    date={observanceDay.date}
-                    day={observanceDay.day}
-                    description={observanceDay.description}
-                  />
-                ))
-              }
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <br />
-
-      <div class="tabs">
-        <div class="tab">
-          <input
-            type="checkbox"
-            id="november"
-            checked={name == "november" ? true : false}
-          />
-          <label class="tab-label" for="november">November</label>
-          <div class="tab-content">
-            <div class="observanceDaysGrid">
-              {
-                november.map((observanceDay) => (
-                  <ObservanceDay
-                    date={observanceDay.date}
-                    day={observanceDay.day}
-                    description={observanceDay.description}
-                  />
-                ))
-              }
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <br />
-
-      <div class="tabs">
-        <div class="tab">
-          <input
-            type="checkbox"
-            id="december"
-            checked={name == "december" ? true : false}
-          />
-          <label class="tab-label" for="december">December</label>
-          <div class="tab-content">
-            <div class="observanceDaysGrid">
-              {
-                december.map((observanceDay) => (
-                  <ObservanceDay
-                    date={observanceDay.date}
-                    day={observanceDay.day}
-                    description={observanceDay.description}
-                  />
-                ))
-              }
-            </div>
-          </div>
-        </div>
-      </div>
-
       <br />
 
       <div>
@@ -385,13 +110,6 @@ let name = month[d.getMonth()].toLowerCase();
     margin-top: 5rem;
   }
 
-  .observanceDaysGrid {
-    display: grid;
-    gap: 2.5rem;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    margin-bottom: 4rem;
-  }
-
   /* Small screens */
   @media only screen and (max-width: 600px) {
     .wrapper {
@@ -407,95 +125,6 @@ let name = month[d.getMonth()].toLowerCase();
 
     .description {
       margin: 1rem;
-    }
-
-    .observanceDaysGrid,
-    .tabs {
-      margin: 5%;
-    }
-  }
-
-  $midnight: #285f40;
-  $clouds: #ecf0f1;
-
-  input {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-  }
-  // Layout
-  .row {
-    display: flex;
-    .col {
-      flex: 1;
-      &:last-child {
-        margin-left: 1em;
-      }
-    }
-  }
-  /* Accordion styles */
-  .tabs {
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
-  }
-  .tab {
-    width: 100%;
-    color: white;
-    overflow: hidden;
-    font-size: 1.5rem;
-    &-label {
-      display: flex;
-      justify-content: space-between;
-      padding: 1em;
-      background: $midnight;
-      font-weight: bold;
-      cursor: pointer;
-      /* Icon */
-      &:hover {
-        background: darken($midnight, 10%);
-      }
-      &::after {
-        content: "\276F";
-        width: 1em;
-        height: 1em;
-        text-align: center;
-        transition: all 0.55s;
-      }
-    }
-    &-content {
-      display: none;
-      max-height: 0;
-      padding: 0 1em;
-      color: $midnight;
-      background: white;
-      transition: all 0.55s;
-    }
-    &-close {
-      display: flex;
-      justify-content: flex-end;
-      padding: 1em;
-      font-size: 0.75em;
-      background: $midnight;
-      cursor: pointer;
-      &:hover {
-        background: darken($midnight, 10%);
-      }
-    }
-  }
-
-  // :checked
-  input:checked {
-    + .tab-label {
-      background: darken($midnight, 10%);
-      &::after {
-        transform: rotate(90deg);
-      }
-    }
-    ~ .tab-content {
-      max-height: 100%;
-      padding: 1em;
-      display: block;
     }
   }
 </style>
