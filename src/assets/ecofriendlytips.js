@@ -240,5 +240,11 @@ export const ecofriendlytips = [
         tip: `Instead of throwing away banana peels, blend it with an egg 
         and apply to your scalp. This boost your hair growth and reduce grey hair."`,
         hashtags: ["ecotips", "healthhack", "beautytip", "haircare"]
+    },
+    {
+        tipNumber: 45,
+        tip: `To get rid of the bad odour in your shoes, put a tea bag in each and 
+        leave it overnight. No more stinky shoes.`,
+        hashtags: ["cleanliness", "etiquette", "lifehack"]
     }
 ]
