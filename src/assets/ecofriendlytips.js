@@ -246,5 +246,10 @@ export const ecofriendlytips = [
         tip: `To get rid of the bad odour in your shoes, put a tea bag in each and 
         leave it overnight. No more stinky shoes.`,
         hashtags: ["cleanliness", "etiquette", "lifehack"]
+    },
+    {
+        tipNumber: 46,
+        tip: `Don't throw your banana peels. Use it to polish your leather shoes and see how good they shine.`,
+        hashtags: ["banana", "shoes", "lifehack"]
     }
 ]
