@@ -7,6 +7,13 @@ export const december = [
         The Asiatic Cheetah population in India  was declared extinct in 1952.`
     },
     {
+        date: "4 December",
+        day: "World Wildlife Conservation Day",
+        description: `More efforts are necessary to save species such as amphibians, 
+        reptiles and plants. The charismatic mammals have all the limelight now, 
+        but it doesn't justify conservation.`
+    },
+    {
         date: "5 December",
         day: "World Soil Day",
         description: `This year, the campaign "Halt soil salinization, boost soil productivity" 
