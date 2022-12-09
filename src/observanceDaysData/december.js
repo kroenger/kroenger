@@ -22,6 +22,13 @@ export const december = [
         societies to improve soil health.`
     },
     {
+        date: "10 December",
+        day: "International Animal Rights Day",
+        description: `Animal rights advocates to persuade people that kindness and respect are owed to all living beings including animals. 
+        It is scientifically proven that animals can experience pain and perceive feelings. For these reasons, it’s important to realize 
+        that like humans, animals deserve to have rights.`
+    },
+    {
         date: "11 December",
         day: "International Mountain Day",
         description: `Theme: Sustainable tourism in mountains.
