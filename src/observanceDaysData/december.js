@@ -22,11 +22,19 @@ export const december = [
         societies to improve soil health.`
     },
     {
+        date: "10 December",
+        day: "International Animal Rights Day",
+        description: `Animal rights advocates to persuade people that kindness and respect are owed to all living beings including animals. 
+        It is scientifically proven that animals can experience pain and perceive feelings. For these reasons, it’s important to realize 
+        that like humans, animals deserve to have rights.`
+    },
+    {
         date: "11 December",
         day: "International Mountain Day",
-        description: `Theme: Sustainable tourism in mountains.
-        It can contribute to creating additional and alternative livelihood options and promoting poverty alleviation, 
-        social inclusion, as well as landscape and biodiversity conservation.`
+        description: `The theme of this year's International Mountain Day is WOMEN MOVE MOUNTAIN. Women play a key role in 
+        environmental protection and social and economic development in mountain areas. They are often the primary managers 
+        of mountain resources, guardians of biodiversity, keepers of traditional knowledge, custodians of local culture and 
+        experts in traditional medicine.`
     },
     {
         date: "27 December",
