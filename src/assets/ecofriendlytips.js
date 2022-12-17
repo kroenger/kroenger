@@ -251,5 +251,10 @@ export const ecofriendlytips = [
         tipNumber: 46,
         tip: `Don't throw your banana peels. Use it to polish your leather shoes and see how good they shine.`,
         hashtags: ["banana", "shoes", "lifehack"]
+    },
+    {
+        tipNumber: 47,
+        tip: `Freeze your candles before lightning to make it burn way longer.`,
+        hashtags: ["candles", "homecare", "ideas"]
     }
 ]
