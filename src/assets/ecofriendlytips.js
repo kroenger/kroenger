@@ -256,5 +256,11 @@ export const ecofriendlytips = [
         tipNumber: 47,
         tip: `Freeze your candles before lightning to make it burn way longer.`,
         hashtags: ["candles", "homecare", "ideas"]
+    },
+    {
+        tipNumber: 48,
+        tip: `Place matchsticks head-down in your plant-pots as it adds sulphur & phosphorus 
+        that nourishes the plant. Try this cheap alternative instead of expensive fertilizers.`,
+        hashtags: ["matchsticks", "homegarden", "gardening"]
     }
 ]
