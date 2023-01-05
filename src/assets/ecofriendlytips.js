@@ -262,5 +262,10 @@ export const ecofriendlytips = [
         tip: `Place matchsticks head-down in your plant-pots as it adds sulphur & phosphorus 
         that nourishes the plant. Try this cheap alternative instead of expensive fertilizers.`,
         hashtags: ["matchsticks", "homegarden", "gardening"]
+    },
+    {
+        tipNumber: 49,
+        tip: `Dip a teabag in water and use it wipe your mirror. Enjoy your shiny looks.`,
+        hashtags: ["mirror", "clean", "teabag"]
     }
 ]
