@@ -267,5 +267,18 @@ export const ecofriendlytips = [
         tipNumber: 49,
         tip: `Dip a teabag in water and use it wipe your mirror. Enjoy your shiny looks.`,
         hashtags: ["mirror", "clean", "teabag"]
+    },
+    {
+        tipNumber: 50,
+        tip: `Soak onion peels in water for 24 hours and strain the liquid. 
+        This antibacterial formula could be sprayed on your skin to cure itchiness!`,
+        hashtags: ["healthcare", "homecare", "skincare"]
+    },
+    {
+        tipNumber: 51,
+        tip: `Put orange peels and vinegar in a closed jar and place it somewhere 
+        dark for 2 weeks. Strain out the liquid into a spray bottle for an effective, 
+        natural and aromatic cleaning spray.`,
+        hashtags: ["naturalcures", "naturalremedy", "orange"]
     }
 ]
