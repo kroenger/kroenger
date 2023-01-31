@@ -280,5 +280,11 @@ export const ecofriendlytips = [
         dark for 2 weeks. Strain out the liquid into a spray bottle for an effective, 
         natural and aromatic cleaning spray.`,
         hashtags: ["naturalcures", "naturalremedy", "orange"]
+    },
+    {
+        tipNumber: 52,
+        tip: `Mix baking soda, coconut oil and peppermint essential oil 
+        for a natural and effective toothpaste.`,
+        hashtags: ["toothpase", "naturalremedy", "greencare"]
     }
 ]
