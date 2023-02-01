@@ -285,6 +285,6 @@ export const ecofriendlytips = [
         tipNumber: 52,
         tip: `Mix baking soda, coconut oil and peppermint essential oil 
         for a natural and effective toothpaste.`,
-        hashtags: ["toothpase", "naturalremedy", "greencare"]
+        hashtags: ["toothpase", "peppermint", "greencare"]
     }
 ]
