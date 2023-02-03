@@ -26,10 +26,38 @@ import Layout from "../layouts/Layout.astro";
         }
       </div>
     </article>
+    <button id="back-to-top-btn">
+      <svg
+        fill="#000000"
+        width="50px"
+        height="50px"
+        viewBox="0 0 24 24"
+        id="up-arrow-direction-square"
+        data-name="Flat Color"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect
+          id="primary"
+          x="2"
+          y="2"
+          width="20"
+          height="20"
+          rx="2"
+          style="fill: rgb(40,95,64);"></rect>
+        <path
+          id="secondary"
+          d="M14.83,9.5,12.69,6.38a.82.82,0,0,0-1.38,0L9.17,9.5A1,1,0,0,0,9.86,11H11v6a1,1,0,0,0,2,0V11h1.14A1,1,0,0,0,14.83,9.5Z"
+          style="fill: rgb(161,215,131);"></path>
+      </svg>
+    </button>
   </div>
 </Layout>
 
 <style>
+  html {
+    scroll-behavior: smooth;
+  }
+
   .wrapper {
     margin-inline: 17rem;
     margin-top: 5rem;
@@ -43,6 +71,17 @@ import Layout from "../layouts/Layout.astro";
     margin: 5rem 0%;
   }
 
+  #back-to-top-btn {
+    position: fixed;
+    bottom: 1.2rem;
+    right: 1rem;
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+
   @media only screen and (max-width: 600px) {
     .wrapper {
       margin-inline: 0;
@@ -53,5 +92,36 @@ import Layout from "../layouts/Layout.astro";
       margin-inline: 15%;
       margin-bottom: 5rem;
     }
+    #back-to-top-btn {
+      bottom: 5.2rem;
+      right: 0.3rem;
+    }
   }
 </style>
+
+<script>
+  var backtotopbtn = document.getElementById("back-to-top-btn");
+  window.onscroll = function () {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      if (backtotopbtn != null) {
+        backtotopbtn.style.display = "block";
+      }
+    } else {
+      if (backtotopbtn != null) {
+        backtotopbtn.style.display = "none";
+      }
+    }
+  };
+
+  if (backtotopbtn != null) {
+    backtotopbtn.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+  }
+</script>
