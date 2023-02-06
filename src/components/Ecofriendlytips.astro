@@ -27,7 +27,7 @@ const uniqueHashtags = newRandomHashtags.filter(onlyUnique);
 <div class="tipsCard">
   <article>
     <div class="image">
-      <img src={`../tips/${tipNumber}.webp`} alt={tip} />
+      <img src={`../tips/${tipNumber}.webp`} alt={`${tip}`} />
     </div>
     <h3 class="tipNumber">Eco friendly tip #{tipNumber}</h3>
     <p class="tip">
@@ -114,6 +114,7 @@ const uniqueHashtags = newRandomHashtags.filter(onlyUnique);
       padding: 5%;
       font-weight: 600;
       color: #285f40;
+      font-size: 0.6rem;
     }
   }
 </style>
