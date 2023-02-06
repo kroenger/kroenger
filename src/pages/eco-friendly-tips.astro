@@ -2,16 +2,25 @@
 import { ecofriendlytips } from "../assets/ecofriendlytips";
 import Ecofriendlytips from "../components/Ecofriendlytips.astro";
 import Layout from "../layouts/Layout.astro";
+
+const numberOfTips = () => {
+  var num = parseFloat(ecofriendlytips.length.toString());
+    if (!isNaN(num) && num > 0) {
+        return `${num} Eco-friendly Tips`;
+    }
+    return `Eco-friendly Tips`;
+}
+const title = numberOfTips();
 ---
 
 <Layout
-  title="Eco-friendly tips"
+  title={title}
   description="Eco-friendly tips are beneficial for you and the planet altogether."
   activePage="tips"
 >
   <div class="wrapper">
     <article>
-      <h1>Eco-friendly Tips</h1>
+      <h1>{title}</h1>
       <h2><i>"be the change you want to see"</i></h2>
 
       <div class="tipsContainer">
