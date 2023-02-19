@@ -292,5 +292,17 @@ export const ecofriendlytips = [
         tip: `Instead of sugary industrial beverages, choose coconut water which 
         is healthy, eco-friendly & a way to support local farmer communities.`,
         hashtags: ["coconut", "vocalforlocal", "coconutwater"]
+    },
+    {
+        tipNumber: 54,
+        tip: `Freeze aloe vera gel into ice cubes and use them to soothe 
+        sunburns or insect bites. (But make sure you are not allergic to it!)`,
+        hashtags: ["aloevera", "sunburn", "homeremedy"]
+    },
+    {
+        tipNumber: 55,
+        tip: `Look for eco-friendly phone accessories such as phone cases 
+        made from sustainable materials or biodegradable phone screen protectors.`,
+        hashtags: ["phonecover", "accessories", "sustainable"]
     }
 ]
