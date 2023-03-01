@@ -2,9 +2,10 @@ export const march = [
     {
         date: "3 March",
         day: "World Wildlife Day",
-        description: `'Recovering key species for ecosystem restoration' is the theme for this year. 
-        The celebrations will seek to draw attention to the conservation status of some of the most 
-        critically endangered species of wild fauna and flora.`
+        description: `The focus of World Wildlife Day 2023 is on "Partnerships for Wildlife Conservation". 
+        The goal is to emphasize the significance of working together globally to preserve wildlife. 
+        To safeguard the welfare of wild animals, it is essential for governments to forge partnerships, 
+        team up with civil society groups, and involve local communities in conservation efforts.`
     },
     {
         date: "14 March",
