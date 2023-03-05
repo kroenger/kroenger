@@ -304,5 +304,11 @@ export const ecofriendlytips = [
         tip: `Look for eco-friendly phone accessories such as phone cases 
         made from sustainable materials or biodegradable phone screen protectors.`,
         hashtags: ["phonecover", "accessories", "sustainable"]
+    },
+    {
+        tipNumber: 56,
+        tip: `Instead of plastic or paper wraps use beeswax wraps which are reusable, 
+        biodegradable, versatile, non-toxic & cost effective.`,
+        hashtags: ["beeswax", "biodegradable", "reusable"]
     }
 ]
