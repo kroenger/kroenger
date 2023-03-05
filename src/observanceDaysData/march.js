@@ -9,20 +9,25 @@ export const march = [
     },
     {
         date: "14 March",
-        day: "International Rivers Day",
-        description: `We’re celebrating the 25th Anniversary of this Day for Rivers by also highlighting 
-        the importance of Rivers to Biodiversity. Rivers are key to restoring and maintaining the world’s biodiversity`
+        day: "International Day of Action for Rivers",
+        description: `It is observed to raise awareness about the importance of rivers and advocate for their protection. 
+        The theme for 2023 is "Rights of Rivers," which focuses on recognizing rivers as living entities and promoting their 
+        legal rights. The day is marked by various events and activities around the world, including river cleanups, 
+        educational programs, and advocacy campaigns.`
     },
     {
         date: "21 March",
         day: "International Day of Forests",
-        description: `'The Role of Forests in Ensuring Sustainable Production and Consumption' - for a better tomorrow, it's now we have to act!`
+        description: `This years celebration will focus on the theme of “Forests and Health,” highlighting the essential role that 
+        forests play in promoting human health through their contribution to clean air and water, food security, medicinal resources, 
+        and economic livelihoods. It will emphasize the urgent need to protect and restore the world's forests, which are under threat 
+        from deforestation, climate change, and other environmental pressures.`
     },
     {
         date: "25 March",
         day: "Anniversary of Chipko Movement",
-        description: `The Chipko movement was a non-violent agitation in 1973 that was aimed at protection and 
-        conservation of trees, but, perhaps, it is best remembered for the collective mobilisation of women for 
-        the cause of preserving forests, which also brought about a change in attitude regarding their own status in society`
+        description: `The Chipko Movement was a forest conservation movement that started in the 1970s in Uttarakhand, India. 
+        It was primarily led by women who hugged trees to prevent them from being cut down. The movement played a significant 
+        role in promoting environmental conservation and raising awareness about the importance of forests for local communities.`
     }
 ]
