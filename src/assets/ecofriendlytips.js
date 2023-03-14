@@ -310,5 +310,11 @@ export const ecofriendlytips = [
         tip: `Instead of plastic or paper wraps use beeswax wraps which are reusable, 
         biodegradable, versatile, non-toxic & cost effective.`,
         hashtags: ["beeswax", "biodegradable", "reusable"]
+    },
+    {
+        tipNumber: 57,
+        tip: `Instead of using artificial lighting, try to use natural light as much 
+        as possible. Open your curtains and blinds during the day to let in sunlight.`,
+        hashtags: ["sunlight", "nature", "healing"]
     }
 ]
