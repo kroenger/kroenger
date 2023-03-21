@@ -24,6 +24,14 @@ export const march = [
         from deforestation, climate change, and other environmental pressures.`
     },
     {
+        date: "22 March",
+        day: "World Water Day",
+        description: `The theme for World Water Day 2023 is “Accelerating Change”. It is about speeding up the progress 
+        towards achieving Sustainable Development Goal (SDG) 6: water and sanitation for all by 2030. The celebration of 
+        World Water Day 2023 coincides with the start of the UN 2023 Water Conference (March 22-24, New York). The conference 
+        is a once-in-a-generation opportunity to unite the world around solving the water and sanitation crisis.`
+    },
+    {
         date: "25 March",
         day: "Anniversary of Chipko Movement",
         description: `The Chipko Movement was a forest conservation movement that started in the 1970s in Uttarakhand, India. 
