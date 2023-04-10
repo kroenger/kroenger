@@ -316,5 +316,22 @@ export const ecofriendlytips = [
         tip: `Instead of using artificial lighting, try to use natural light as much 
         as possible. Open your curtains and blinds during the day to let in sunlight.`,
         hashtags: ["sunlight", "nature", "healing"]
+    },
+    {
+        tipNumber: 58,
+        tip: `Keep an open bowl of water in the terrace or yard of your home during daytime.
+        Let the birds quench their thirst in this hot summer.`,
+        hashtags: ["summer", "birds", "water"]
+    },
+    {
+        tipNumber: 59,
+        tip: `The jackfruit rags (finger like projections inside the fruit) can be 
+        used as a vegan supplement for pulled pork.`,
+        hashtags: ["jackfruit", "vegan", "fruits"]
+    },
+    {
+        tipNumber: 60,
+        tip: `Try the eco-friendly Indian way of moping using brooms made of coconut leaf sticks.`,
+        hashtags: ["coconut", "leaf", "indian"]
     }
 ]
