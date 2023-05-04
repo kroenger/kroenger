@@ -333,5 +333,16 @@ export const ecofriendlytips = [
         tipNumber: 60,
         tip: `Try the eco-friendly Indian way of moping using brooms made of coconut leaf sticks.`,
         hashtags: ["coconut", "leaf", "indian"]
+    },
+    {
+        tipNumber: 61,
+        tip: `When done with a plastic bottle, poke a hole in the cap and insert an ear swab through it. 
+        Fill the bottle & place it upside down on the plant soil. Homemade drip system ready!`,
+        hashtags: ["plastic", "homemade", "garden"]
+    },
+    {
+        tipNumber: 62,
+        tip: `Upcycle old filament bulbs to oil lamps or candle holders.`,
+        hashtags: ["upcycle", "artist", "candle"]
     }
 ]
