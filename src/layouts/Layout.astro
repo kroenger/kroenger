@@ -4,9 +4,11 @@ export interface Props {
   description: string;
   isHome?: boolean;
   activePage?: string;
+  ogImage?: string;
 }
 
-const { title, description, isHome, activePage } = Astro.props;
+const { title, description, isHome, activePage, ogImage } = Astro.props;
+const ogImageLink = ogImage ? ogImage : "https://kroenger.org/new_logo.png";
 ---
 
 <!DOCTYPE html>
@@ -24,17 +26,14 @@ const { title, description, isHome, activePage } = Astro.props;
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width,minimum-scale=1" />
-
+    <meta property="og:site_name" content="Kroenger" />
     <meta name="description" content={description} />
-    <meta name="image" content={Astro.url} />
-
+    <meta name="image" content={ogImageLink} />
+    
     <meta property="og:title" content={title} />
     <meta property="og:type" content="article" />
     <meta property="og:url" content={Astro.url} />
-    <meta
-      property="og:image"
-      content="https://kroenger.org/logo.png"
-    />
+    <meta property="og:image" content={ogImageLink} />
     <meta property="og:description" content={description} />
 
     <meta name="twitter:card" content="summary" />
@@ -42,10 +41,7 @@ const { title, description, isHome, activePage } = Astro.props;
     <meta name="twitter:creator" content="@kroenger" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta
-      name="twitter:image"
-      content="https://kroenger.org/logo.png"
-    />
+    <meta name="twitter:image" content={ogImageLink} />
 
     <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
     <link rel="apple-touch-icon" type="image/x-icon" href="/logo.png" />
