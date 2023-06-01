@@ -344,5 +344,10 @@ export const ecofriendlytips = [
         tipNumber: 62,
         tip: `Upcycle old filament bulbs to oil lamps or candle holders.`,
         hashtags: ["upcycle", "artist", "candle"]
+    },
+    {
+        tipNumber: 63,
+        tip: `Wash clothes in cold water and skip the dryer (which produces 1.8 kilos of CO2 per cycle). Line-dry your laundry instead.`,
+        hashtags: ["coldwater", "laundary", "dryclean"]
     }
 ]
