@@ -349,5 +349,22 @@ export const ecofriendlytips = [
         tipNumber: 63,
         tip: `Wash clothes in cold water and skip the dryer (which produces 1.8 kilos of CO2 per cycle). Line-dry your laundry instead.`,
         hashtags: ["coldwater", "laundary", "dryclean"]
+    },
+    {
+        tipNumber: 64,
+        tip: `Cut soap bars into halves or thirds. Use one small piece at a time until it is gone. 
+        This helps the soap last longer and save you a little money!`,
+        hashtags: ["soap", "money", "lifehack"]
+    },
+    {
+        tipNumber: 65,
+        tip: `Save energy and time chilling your drinks! Just wrap them up in a wet cloth and place in the freezer till the cloth freezes.`,
+        hashtags: ["energy", "feezer", "cooldrinks"]
+    },
+    {
+        tipNumber: 66,
+        tip: `Beware of "phantom load"! Even when appliances are turned off, they still consume energy if plugged in. 
+        Remember to unplug them when not in use.`,
+        hashtags: ["phantomload", "energy", "electronics"]
     }
 ]
