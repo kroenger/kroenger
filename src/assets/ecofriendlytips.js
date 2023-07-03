@@ -366,5 +366,10 @@ export const ecofriendlytips = [
         tip: `Beware of "phantom load"! Even when appliances are turned off, they still consume energy if plugged in. 
         Remember to unplug them when not in use.`,
         hashtags: ["phantomload", "energy", "electronics"]
+    },
+    {
+        tipNumber: 67,
+        tip: `Ditch disposable diapers which take 450 years to decompose. Use cotton or hemp cloth diapers instead.`,
+        hashtags: ["cotton", "hemp", "cloth"]
     }
 ]
