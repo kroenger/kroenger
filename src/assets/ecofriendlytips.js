@@ -371,5 +371,10 @@ export const ecofriendlytips = [
         tipNumber: 67,
         tip: `Ditch disposable diapers which take 450 years to decompose. Use cotton or hemp cloth diapers instead.`,
         hashtags: ["cotton", "hemp", "cloth"]
+    },
+    {
+        tipNumber: 68,
+        tip: `Embrace atleast one weekly work-from-home day. Save on transport and cut carbon emissions.`,
+        hashtags: ["workfromhome", "carbon", "transport"]
     }
 ]
