@@ -376,5 +376,10 @@ export const ecofriendlytips = [
         tipNumber: 68,
         tip: `Embrace atleast one weekly work-from-home day. Save on transport and cut carbon emissions.`,
         hashtags: ["workfromhome", "carbon", "transport"]
+    },
+    {
+        tipNumber: 69,
+        tip: `Outdoor classes atleast once a week could save energy and enhance the physical activity, mental health, creativity & social interaction of students.`,
+        hashtags: ["outdoor", "physical", "mentalhealth"]
     }
 ]
