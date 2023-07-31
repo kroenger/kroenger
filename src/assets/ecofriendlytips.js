@@ -381,5 +381,15 @@ export const ecofriendlytips = [
         tipNumber: 69,
         tip: `Outdoor classes atleast once a week could save energy and enhance the physical activity, mental health, creativity & social interaction of students.`,
         hashtags: ["outdoor", "physical", "mentalhealth"]
+    },
+    {
+        tipNumber: 70,
+        tip: `After boiling eggs, save the leftover water to feed your plants. It's a nutrient rich delicacy for them!`,
+        hashtags: ["eggs", "plants", "homecare"]
+    },
+    {
+        tipNumber: 71,
+        tip: `Try using coconut husk as a sustainable body scrub instead of artificial ones for exfoliation and reducing plastic waste.`,
+        hashtags: ["coconut", "skincare", "sustainable"]
     }
 ]
