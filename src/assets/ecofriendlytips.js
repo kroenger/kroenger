@@ -391,5 +391,10 @@ export const ecofriendlytips = [
         tipNumber: 71,
         tip: `Try using coconut husk as a sustainable body scrub instead of artificial ones for exfoliation and reducing plastic waste.`,
         hashtags: ["coconut", "skincare", "sustainable"]
+    },
+    {
+        tipNumber: 72,
+        tip: `Ditch aftershave and use alum stone instead, which is a natural antiseptic with astringent properties. Just remember to use a moisturizer along!`,
+        hashtags: ["natural", "skincare", "diy"]
     }
 ]
