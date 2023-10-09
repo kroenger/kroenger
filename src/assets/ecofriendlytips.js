@@ -396,5 +396,20 @@ export const ecofriendlytips = [
         tipNumber: 72,
         tip: `Ditch aftershave and use alum stone instead, which is a natural antiseptic with astringent properties. Just remember to use a moisturizer along!`,
         hashtags: ["natural", "skincare", "diy"]
+    },
+    {
+        tipNumber: 73,
+        tip: `Don't throw away buttons from your old clothes. Make jewellery out of them instead. Bracelets are a simple & kids-safe option.`,
+        hashtags: ["clothes", "upcycle", "recycle"]
+    },
+    {
+        tipNumber: 74,
+        tip: `Don't throw away your old t-shirts. Turn it into sustainable Tote Bags.`,
+        hashtags: ["upcycle", "sustainable", "diy"]
+    },
+    {
+        tipNumber: 75,
+        tip: `Avoid watering your plants during the hottest part of the day. Early morning or late in the evening is the ideal time, due to reduced evaporation.`,
+        hashtags: ["homegarden", "homecare", "plants"]
     }
 ]
