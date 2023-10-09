@@ -19,9 +19,17 @@ export const october = [
         recognised as sentient beings and full regard is always paid to their welfare.`
     },
     {
+        date: "7 October",
+        day: "World Cotton Day",
+        description: `A day to raise awareness about the need for market access for cotton products from least developed countries, 
+        foster sustainable trade policies, & enable developing countries to benefit more from the cotton value chain. Celebrated in 
+        collaboration with the WTO, FAO, UNCTAD, ITC and ICAC. China & India are the world's largest producers of cotton`
+    },
+    {
         date: "8 October",
-        day: "World Migratory Bird Day",
-        description: `an annual awareness-raising campaign highlighting the need for the conservation of migratory birds and their habitats`
+        day: "World Octopus Day",
+        description: `World Octopus Day is celebrated on October 8th every year to raise awareness about these fascinating creatures. 
+        Octopuses are known for their intelligence, adaptability, and unique physical characteristics like camouflage.`
     },
     {
         date: "13 October",
