@@ -9,6 +9,27 @@ export interface Props {
 
 const { title, description, isHome, activePage, ogImage } = Astro.props;
 const ogImageLink = ogImage ? ogImage : "https://kroenger.org/new_logo.png";
+
+var date = new Date();
+
+var year = date.getFullYear();
+var month = date.getMonth() + 1;
+var day = date.getDate();
+var hour = date.getHours();
+var minute = date.getMinutes();
+var second = date.getSeconds();
+
+// Pad with zeros if needed
+const monthNew = month < 10 ? '0' + month : month;
+const dayNew = day < 10 ? '0' + day : day;
+const hourNew = hour < 10 ? '0' + hour : hour;
+const minuteNew = minute < 10 ? '0' + minute : minute;
+const secondNew = second < 10 ? '0' + second : second;
+
+// Format the date and time as a string
+var formattedDate = year + '-' + monthNew + '-' + dayNew;
+var formattedTime = hourNew + ':' + minuteNew + ':' + secondNew;
+var formattedDateTime = formattedDate + ' ' + formattedTime;
 ---
 
 <!DOCTYPE html>
@@ -45,6 +66,8 @@ const ogImageLink = ogImage ? ogImage : "https://kroenger.org/new_logo.png";
 
     <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
     <link rel="apple-touch-icon" type="image/x-icon" href="/logo.png" />
+
+    <meta http-equiv="last-modified" content={formattedDateTime} />
   </head>
   <body>
     {
