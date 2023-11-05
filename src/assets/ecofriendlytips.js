@@ -411,5 +411,10 @@ export const ecofriendlytips = [
         tipNumber: 75,
         tip: `Avoid watering your plants during the hottest part of the day. Early morning or late in the evening is the ideal time, due to reduced evaporation.`,
         hashtags: ["homegarden", "homecare", "plants"]
+    },
+    {
+        tipNumber: 76,
+        tip: `Place dried coffee grounds in a small bowl & leave them in areas where you want to freshen the air. These will absorb and neutralize unpleasant odors.`,
+        hashtags: ["homecare", "coffee", "air"]
     }
 ]
