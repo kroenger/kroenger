@@ -1,0 +1,114 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Image from "../components/Image.astro";
+import Image1 from "../images/wildlife-biology.png";
+import Image2 from "../images/what-wildlife-biologists-do.png";
+import Image3 from "../images/ecological-studies.png";
+import Image4 from "../images/wildlife-laws-and-policies.png";
+import Image5 from "../images/molecular-studies.png";
+import Image6 from "../images/reproductive-biology.png";
+import Image7 from "../images/wildlife-conservation-education.png";
+import Image8 from "../images/wildlife-diseases.png";
+import Image9 from "../images/major-wildlife-courses.png";
+import Image10 from "../images/minor-wildlife-courses.png";
+import Image11 from "../images/wildlife-institute-of-india.png";
+import Image12 from "../images/national-center-for-biological-sciences.png";
+import Image13 from "../images/aligarh-muslim-university.png";
+import Image14 from "../images/centre-for-wildlife-studies.png";
+import Image15 from "../images/wildlife-courses-colleges.png";
+import Image16 from "../images/how-to-start-wildlife-studies.png";
+import Image17 from "../images/wildlife-documentaries.png";
+import Image18 from "../images/thank-you.png";
+---
+
+<Layout
+  title="WildLife Biology: Careers and Oppurtunities"
+  description="Career and Oppurtunities in wildlife biology"
+  activePage="wildlife"
+  ogImage="https://kroenger.org/wildlife-biology-careers-oppurtunities.png"
+>
+  <div class="wrapper">
+    <h1>WildLife Biology: Careers and Oppurtunities</h1>
+
+    <Image src={Image1} alt="WildLife Biology: Careers and Oppurtunities" />
+    <Image src={Image2} alt="What wildlife biologists do?" />
+    <Image
+      src={Image3}
+      alt="Ecological studies includes population ecology, migration studies and ecosystem restoration"
+    />
+    <Image src={Image4} alt="Wildlife laws and policies" />
+    <Image
+      src={Image5}
+      alt="Molecular studies include evolution and phylogeny, genetics and wildlife forensics"
+    />
+    <Image
+      src={Image6}
+      alt="Wildlife biologist do manage reproductive projects"
+    />
+    <Image src={Image7} alt="Wildlife conservation education" />
+    <Image src={Image8} alt="Wildlife diseases and zoonoses" />
+    <Image src={Image9} alt="Major Wildlife biology courses" />
+    <Image src={Image10} alt="Minor Wildlife biology courses" />
+    <Image src={Image11} alt="Wildlife Institute of India courses" />
+    <Image
+      src={Image12}
+      alt="National Centre for Biological Sciences courses"
+    />
+    <Image src={Image13} alt="Aligarh Muslim University courses" />
+    <Image src={Image14} alt="Centre for wildlife studies courses" />
+    <Image src={Image15} alt="Wildlife education colleges in India" />
+    <Image src={Image16} alt="How to start wildlife studies" />
+    <Image src={Image17} alt="Wildlife documentaries" />
+    <Image
+      src={Image18}
+      alt="Any query regarding wildlife courses in india, please feel free to ask"
+    />
+
+    <p>
+      If you have any doubts regarding wildlife studies in India, please feel
+      free to ask.
+    </p>
+    <p>
+      Phone: <a href="tel:+919048427965">+919048427965</a>
+    </p>
+    <p>
+      E-Mail: <a href="mailto:jonathan@kroenger.org">jonathan@kroenger.org</a>
+    </p>
+  </div>
+</Layout>
+
+<style>
+  h1 {
+    text-align: center;
+  }
+
+  .wrapper {
+    margin-inline: 17rem;
+    margin-top: 5rem;
+  }
+
+  .grid {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    margin-bottom: 4rem;
+  }
+
+  /* Small screens */
+  @media only screen and (max-width: 600px) {
+    .wrapper {
+      margin-inline: 0;
+      margin-top: 0;
+      margin-bottom: 6rem;
+    }
+  }
+
+  p {
+    font-size: large;
+    padding-inline: 25px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+</style>

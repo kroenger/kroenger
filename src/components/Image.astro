@@ -1,0 +1,27 @@
+---
+import { Image } from 'astro:assets';
+---
+
+<script>
+  export interface Props {
+    src: string;
+    alt: string;
+    widths?: number[];
+  }
+</script>
+
+<Image
+  src={Astro.props.src}
+  alt={Astro.props.alt}
+  sizes="(max-width:  640px)  100vw,  50vw"
+  widths={Astro.props.widths || [200,  400,  800,  1600]}
+  loading="eager"
+/>
+<style>
+    img {
+        max-width:  100%;
+        height: auto;
+        margin-block: 1rem;
+    }
+
+</style>
