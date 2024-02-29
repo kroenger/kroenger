@@ -23,6 +23,9 @@ export const MobileMenu = () => {
         <a href="calendar" aria-label="calendar">
           <li>Calendar</li>
         </a>
+        <a href="wildlife-biology-careers-and-oppurtunities" aria-label="wildlife">
+          <li>Wildlife Biology</li>
+        </a>
         <a href="https://www.typinks.com/categories/kroenger.html" aria-label="blog">
           <li>Blog</li>
         </a>
