@@ -2,7 +2,7 @@ export const march = [
     {
         date: "3 March",
         day: "World Wildlife Day",
-        description: ` The theme for World Wildlife Day 2024 is Connecting People and Planet: Exploring Digital Innovation in Wildlife Conservation. 
+        description: `The theme for World Wildlife Day 2024 is Connecting People and Planet: Exploring Digital Innovation in Wildlife Conservation. 
         This theme highlights the role of digital technologies and innovations in protecting and conserving wildlife and their habitats.`
     },
     {
@@ -47,7 +47,7 @@ export const march = [
     },
     {
         date: "23 March",
-        day: "World Water Day",
+        day: "World Beer Day",
         description: `A global event that celebrates all eight species of bears and raises awareness about their threats and conservation. 
         Bears have excellent senses of smell, sight, and hearing. They can smell food, cubs, a mate, or predators from miles away. Their great 
         eyesight allows them to detect when fruits are ripe.`
