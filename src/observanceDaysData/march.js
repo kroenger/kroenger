@@ -47,7 +47,7 @@ export const march = [
     },
     {
         date: "23 March",
-        day: "World Beer Day",
+        day: "World Bear Day",
         description: `A global event that celebrates all eight species of bears and raises awareness about their threats and conservation. 
         Bears have excellent senses of smell, sight, and hearing. They can smell food, cubs, a mate, or predators from miles away. Their great 
         eyesight allows them to detect when fruits are ripe.`
