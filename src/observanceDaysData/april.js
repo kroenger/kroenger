@@ -2,23 +2,22 @@ export const april = [
     {
         date: "3 April",
         day: "World Aquatic Animal Day",
-        description: `The aim of this day is to raise awareness about the importance, challenges and threats 
-        that aquatic animals face, and to advocate for their protection through law, policy, education and action. 
-        The theme for 2023 is Alternatives to the Use of Aquatic Animals.`
+        description: `A day to raise awareness about the critical roles these animals play in our ecosystems and the threats 
+        they face from human activities. The theme for World Aquatic Animal Day in 2024 is “Animals as Community”`
     },
     {
         date: "7 April",
         day: "World Health Day",
-        description: `It is organized by the World Health Organization (WHO) and each year draws attention to a specific 
-        health topic of concern to people all over the world. The date of April 7th marks the anniversary of the founding 
-        of WHO in 1948. The theme for 2023 is Health For All, which coincides with WHO’s 75th birthday`
+        description: `The day mark the anniversary of the founding of the World Health Organization (WHO). The theme for 
+        World Health Day 2024 is "My Health, My Right". This theme underscores the fundamental human right to access 
+        quality healthcare services, education, and information. `
     },
     {
         date: "7 April",
         day: "International Beaver Day",
-        description: `A day to celebrate and appreciate beavers and their role in creating and maintaining wetlands. The aim of this 
-        day is to educate people about the amazing abilities of beavers, their benefits for the environment and wildlife, 
-        and the methods of coexisting with them peacefully.`
+        description: `International Beaver Day is celebrated to recognize the importance of beavers and their 
+        role in maintaining ecosystems. Beavers are known as ecosystem engineers because their dam-building activities can 
+        create wetlands, which are beneficial for other species and help in water conservation.`
     },
     {
         date: "16 April",
@@ -37,9 +36,9 @@ export const april = [
     {
         date: "22 April",
         day: "Earth Day",
-        description: `The theme for Earth Day 2023 is “Invest in Our Planet”, which calls for collective action and investment from governments, 
-        businesses and citizens to create a green, prosperous and equitable future for humanity and the planet. Earth Day was founded in 1970 
-        as a day of education and activism on environmental issues to protect and restore the Earth.`
+        description: `The theme for Earth Day in 2024 is “Planet vs. Plastics”. This theme focuses on the urgent need to address plastic 
+        pollution and its detrimental effects on human and planetary health. It calls for a significant reduction in plastic production 
+        and use, aiming for a 60% reduction by 2040, and ultimately striving for a plastic-free future.`
     },
     {
         date: "25 April",
