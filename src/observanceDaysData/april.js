@@ -55,7 +55,7 @@ export const april = [
         habitat loss, hunting, and human encroachment and all tapir species are endangered or vulnerable.`
     },
     {
-        date: "Last Saturday of April",
+        date: "28 April",
         day: "Save the Frogs Day",
         description: `A day to celebrate and raise awareness about the diverse and fascinating amphibians that inhabit our planet. The day 
         aims to educate people about the threats that frogs face, such as habitat loss, pollution, disease, invasive species, and climate change.`
