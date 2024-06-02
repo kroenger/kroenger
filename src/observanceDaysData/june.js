@@ -19,7 +19,7 @@ export const june = [
         day: "World Environment Day",
         description: `It aims to raise awareness and inspire action for the protection and restoration of our natural world. 
         The day also recognizes the efforts and achievements of individuals, communities, and organizations that are working to 
-        create a greener future. The 2023 celebration will be hosted by Côte d’Ivoire, in partnership with the Netherlands.`
+        create a greener future. The Kingdom of Saudi Arabia will host this year’s World Environment Day`
     },
     {
         date: "6 June",
@@ -62,9 +62,9 @@ export const june = [
     {
         date: "17 June",
         day: "World Day to Combat Desertification and Drought",
-        description: `The theme for 2023 is "Her land. Her rights.". Women face significant barriers in securing land rights, 
-        limiting their ability to thrive and prosper. And when land becomes degraded and water is scarce, women are often the worst 
-        affected. Investing in women’s equal access to land and associated assets is a direct investment in their future and the future of humanity.`
+        description: `The theme for 2024 is “United for Land: Our Legacy. Our Future.” This theme underscores the importance of 
+        collective efforts in land stewardship to ensure the stability and prosperity of billions of people around the world. Every second, 
+        an equivalent of four football fields of healthy land becomes degraded. This adds up to a total of 100 million hectares each year`
     },
     {
         date: "21 June",
