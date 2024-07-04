@@ -19,8 +19,8 @@ export const july = [
         date: "4 July",
         day: "International Jackfruit Day",
         description: `Jackfruit can be eaten raw, cooked, or processed into various products, such as chips, jams, ice creams, 
-        and even meat substitutes. It is rich in vitamins, minerals, antioxidants, and fibre, and has many health benefits. 
-        It also has many uses beyond food, such as its wood, seeds, roots, and leaves. Jackfruit is a sustainable and climate-resilient 
+        and even meat substitutes. It is rich in vitamins, minerals, antioxidants, and fibre, and has many health benefits. It also 
+        has many uses beyond food, such as its wood, seeds, roots, and leaves. Jackfruit is a sustainable and climate-resilient 
         crop that can help reduce hunger and poverty in many parts of the world.`
     },
     {
