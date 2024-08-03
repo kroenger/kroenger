@@ -26,6 +26,13 @@ export const august = [
         care and management of captive and wild elephants.`
     },
     {
+        date: "Third Saturday of August",
+        day: "World Honey Bee Day",
+        description: `Honey bees play a critical role in ecosystems as pollinators. By transferring pollen from one flower to another, 
+        they facilitate the reproduction of many flowering plants, including crops vital for human consumption. Not only do they contribute 
+        to genetic diversity and healthy plant populations, but they also support the food chains that rely on those plants.`
+    }, 
+    {
         date: "19 August",
         day: "International Orangutan Day",
         description: `The day is marked to save species that are on the edge of extinction and to raise awareness about the predicament of this species, 
