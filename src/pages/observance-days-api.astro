@@ -1,0 +1,98 @@
+---
+import Social from "../components/Social.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Observance Days API"
+  description="let's make things more sustainable together"
+  activePage="calendar"
+>
+  <div class="wrapper">
+    <h1>Observance Days API</h1>
+    <p class="description">
+      The API for the Kroenger Observance Days Calendar allows users to retrieve
+      information about significant environmental observance days throughout the
+      year. It provides detailed descriptions of each day, including its
+      significance, history, and impact on environmental conservation efforts.
+      For example, users can access data on events like International Primate
+      Day, World Dolphin Day, and World Rhino Day, along with information on how
+      these events contribute to raising awareness about wildlife protection,
+      climate change, and environmental sustainability. The API is designed to
+      help individuals and organizations stay informed and actively participate
+      in these global environmental initiatives.
+    </p>
+    <br />
+    <br />
+    <h2>Observance Days API List</h2>
+    <div>
+      <ul class="apiListUl">
+        <li><a href="https://kroenger.org/api/observance-days/january">January</a></li>
+        <li><a href="https://kroenger.org/api/observance-days/february">February</a></li>
+        <li><a href="https://kroenger.org/api/observance-days/march">March</a></li>
+        <li><a href="https://kroenger.org/api/observance-days/april">April</a></li>
+        <li><a href="https://kroenger.org/api/observance-days/may">May</a></li>
+        <li><a href="https://kroenger.org/api/observance-days/june">June</a></li>
+        <li><a href="https://kroenger.org/api/observance-days/july">July</a></li>
+        <li><a href="https://kroenger.org/api/observance-days/august">August</a></li>
+        <li><a href="https://kroenger.org/api/observance-days/september">September</a></li>
+        <li><a href="https://kroenger.org/api/observance-days/october">October</a></li>
+        <li><a href="https://kroenger.org/api/observance-days/november">November</a></li>
+        <li><a href="https://kroenger.org/api/observance-days/december">December</a></li>
+      </ul>
+    </div>
+    <div>
+      <Social />
+    </div>
+  </div>
+</Layout>
+
+<style>
+  h1 {
+    text-align: center;
+  }
+
+  .description {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .wrapper {
+    margin-inline: 17rem;
+    margin-top: 5rem;
+  }
+
+  .apiListUl {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .apiListUl > li > a{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--bg-secondary);
+  }
+
+  .apiListUl > li > a:hover {
+    color: var(--bg-primary);
+  }
+
+  /* Small screens */
+  @media only screen and (max-width: 600px) {
+    .wrapper {
+      margin-inline: 0;
+      margin-top: 0;
+      margin-bottom: 6rem;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    .description {
+      margin: 1rem;
+    }
+  }
+</style>
