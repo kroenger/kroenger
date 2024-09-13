@@ -70,6 +70,8 @@ let currentMonth = months[monthIndex].toLowerCase();
         In case you did, we're here to remind you 💚
       </p>
 
+      <h3><a href="/observance-days-api">Observance Days API</a></h3>
+
       <br />
       <br />
 
@@ -103,6 +105,18 @@ let currentMonth = months[monthIndex].toLowerCase();
   .description {
     text-align: center;
     font-size: 1.5rem;
+  }
+
+  h3 {
+    text-align: center;
+    cursor: pointer;
+    a {
+      color: var(--bg-secondary);
+      text-decoration: none;
+    }
+    a:hover{
+      color: var(--bg-primary);
+    }
   }
 
   .wrapper {

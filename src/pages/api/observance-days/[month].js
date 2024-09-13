@@ -53,8 +53,13 @@ export const GET = ({ params, request }) => {
       break;
   }
   return new Response(
-    JSON.stringify(monthData)
-  )
+    JSON.stringify(monthData),
+    {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }
+  );
 }
 
 export function getStaticPaths() {
