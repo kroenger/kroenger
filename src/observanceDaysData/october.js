@@ -34,21 +34,58 @@ export const october = [
     {
         date: "13 October",
         day: "International Day for Disaster Reduction",
-        description: `This year's theme is 'From Risk to Resilience: Towards Sustainable Development For All in a COVID-19 Transformed World'.`
+        description: `The theme for 2024, “Empowering the Next Generation for a Resilient Future,” focuses on the role of education in protecting and 
+        empowering youth against disasters. It highlights the importance of integrating disaster risk reduction into school curricula and ensuring that 
+        children and youth are equipped with the knowledge and skills to respond to emergencies.`
+    },
+    {
+        date: "Second Saturday of October",
+        day: "World Migratory Bird Day",
+        description: `This year’s theme, “Protect Insects, Protect Birds,” underscores the vital connection between insects and the survival of migratory birds. 
+        Insects provide essential nourishment for birds during their long migratory journeys and breeding seasons. The decline in insect populations due to 
+        habitat loss, pesticide use, and climate change poses a significant threat to these birds.`
+    },
+    {
+        date: "Second Saturday of October",
+        day: "International African Penguin Awareness Day",
+        description: `To raise awareness about the endangered status of the African penguin, the day was first organized by the Two Oceans Aquarium in South Africa 
+        in 2010 to highlight the threats faced by these unique birds, such as habitat loss, overfishing, and climate change. African penguins, known for their 
+        distinctive black and white plumage and endearing waddle, are a vital part of marine ecosystems.`
     },
     {
         date: "14 October",
         day: "International E-Waste Day",
-        description: `This year, the main focus of International E-Waste Day will be those small electrical 
-        devices that we no longer use but keep in drawers and cupboards or often toss in the general waste bin.`
+        description: `Aims to raise awareness about the growing issue of electronic waste and promote responsible e-waste management, this year's theme, 
+        “Join the E-Waste Hunt – Retrieve, Recycle, and Revive!” encourages individuals to declutter their homes of unused or broken electronic devices. 
+        By recycling these items, valuable materials can be recovered and reused, reducing the need for raw material extraction and mitigating climate change`
     },
     {
         date: "16 October",
         day: "World Food Day",
-        description: `This years theme will be 'leave no one behind’. Indigenous Peoples are
-        guardians of 80 percent of the world’s terrestrial biodiversity on 22
-        percent of the Earth’s surface, yet globally, they suffer higher rates of
-        poverty, malnutrition and internal displacement compared to non-
-        indigenous groups.`
+        description: `Dedicated to raising awareness about global hunger and promoting efforts to ensure food security and nutritious diets for all,
+        this year's theme, “Right to Foods for a Better Life and a Better Future,” emphasizes the importance of diverse, nutritious, and safe foods.
+        It calls for greater efforts to make these foods accessible and affordable to everyone, highlighting the need for sustainable agricultural 
+        practices and policies that support smallholder farmers.`
+    },
+    {
+        date: "23 October",
+        day: "International Snow Leopard Day",
+        description: `This day marks the anniversary of the Bishkek Declaration, signed in 2013 by the 12 snow leopard range countries, which committed to 
+        protecting these majestic big cats. Snow leopards, native to the high mountain ranges of Central and South Asia, face numerous threats including 
+        habitat loss, poaching, and climate change. They are listed as vulnerable by the IUCN. Their population is estimated to be between 4,000 and 6,500 individuals in the wild.`
+    },
+    {
+        date: "24 October",
+        day: "World Kangaroo Day",
+        description: `Initiated by the organization Kangaroos Alive in 2020, this day highlights the importance of protecting these iconic marsupials, 
+        which are often subjected to hunting and habitat loss. The theme for 2024, “Free to Roam their Songlines,” emphasizes the cultural and ecological 
+        significance of kangaroos, particularly in relation to Aboriginal spirituality and the ancient songlines that connect the Australian landscape.`
+    },
+    {
+        date: "Last Friday of October",
+        day: "World Lemur Day",
+        description: `Lemurs are unique primates found only on the island of Madagascar, and they play a crucial role in maintaining the health of their 
+        ecosystems. Unfortunately, many lemur species are threatened by habitat destruction, hunting, and the illegal pet trade. World Lemur Day aims to 
+        highlight these issues and promote conservation efforts to protect these fascinating creatures.`
     }
 ]
