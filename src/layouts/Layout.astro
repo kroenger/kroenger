@@ -73,7 +73,7 @@ var formattedDateTime = formattedDate + ' ' + formattedTime;
     {
       !isHome ? (
         <nav class="navbar">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav text-green-500 gap-x-8">
             <li class="logo">
               <a href="/" class="nav-link" aria-label="home">
                 <span class="link-text logo-text">Kroenger</span>
@@ -338,7 +338,7 @@ var formattedDateTime = formattedDate + ' ' + formattedTime;
       }
 
       /* Small screens */
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 1024px) {
         .navbar {
           bottom: 0;
           width: 100vw;
@@ -369,7 +369,7 @@ var formattedDateTime = formattedDate + ' ' + formattedTime;
       }
 
       /* Large screens */
-      @media only screen and (min-width: 600px) {
+      @media only screen and (min-width: 1024px) {
         .navbar {
           top: 0;
           width: 5rem;
@@ -405,8 +405,6 @@ var formattedDateTime = formattedDate + ' ' + formattedTime;
         background-color: white;
         --bg-primary: #a1d783;
         --bg-secondary: #285f40;
-        --bg-secondary: #285f40;
-        --bg-primary: #a1d783;
         --transition-speed: 400ms;
       }
 

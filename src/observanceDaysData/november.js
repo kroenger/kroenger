@@ -50,7 +50,7 @@ export const november = [
     {
         date: "19 November",
         day: "World Toilet Day",
-        description: `To inspire action to tackle the global sanitation crisis that affects billions of people around the world who are living without access to a safely managed toilet. The theme for World Toilet Day 2023 is “Accelerating Change” and it encourages everyone to do something to help solve the problem of inadequate sanitation.        `
+        description: `Observed on November 19th, this day raises awareness about the importance of sanitation and hygiene in ensuring human health and dignity. It highlights the global sanitation crisis and advocates for sustainable solutions to ensure everyone has access to safe and clean toilets. By promoting better sanitation practices, we can improve health outcomes and protect the environment.`
     },
     {
         date: "26 November",

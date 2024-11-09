@@ -1,0 +1,45 @@
+---
+interface Props {
+  date: string;
+  day: string;
+  description: string;
+}
+const { date, day, description } = Astro.props;
+let createdImagePath = day.trim().toLowerCase().split(" ").join("-");
+createdImagePath = `/src/images/days/${createdImagePath}.png`;
+let imagePath = "/src/images/days/default.png";
+
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/images/days/*.{jpeg,jpg,png,gif}"
+);
+if (!images[createdImagePath]) {
+  // if image doesn't exist revert to default
+  createdImagePath = imagePath;
+}
+---
+
+<div class="max-w-sm rounded overflow-hidden shadow-lg shadow-[#a1d783]">
+  <article>
+    <span
+      class="flex justify-center bg-[#a1d783] rounded-full px-auto py-1 text-sm font-semibold text-gray-700 my-4 mx-4"
+    >
+      {date}
+    </span>
+    <Image src={images[createdImagePath]()} alt={day} class="w-full" />
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2">{day}</div>
+      <p class="text-gray-700 text-base overflow-hidden">
+        <span
+          style="display: -webkit-box; -webkit-line-clamp: 16; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;"
+        >
+          {description}
+        </span>
+      </p>
+    </div>
+  </article>
+</div>
+
+<style>
+</style>
