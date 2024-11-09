@@ -1,5 +1,6 @@
 ---
 import ObservanceDay from "./ObservanceDay.astro";
+import ObservanceDayNew from "./ObservanceDayNew.astro";
 
 interface Props {
   month: string;
@@ -26,7 +27,7 @@ let monthLowercase = month.toLowerCase();
       <div class="observanceDaysGrid">
         {
           data.map((observanceDay: any) => (
-            <ObservanceDay
+            <ObservanceDayNew
               date={observanceDay.date}
               day={observanceDay.day}
               description={observanceDay.description}

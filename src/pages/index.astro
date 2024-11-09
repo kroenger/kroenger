@@ -4,32 +4,68 @@ import Layout from "../layouts/Layout.astro";
 import { MobileMenu } from "../components/MobileMenu.jsx";
 ---
 
-<Layout title="Home" description="Kroenger is an environment related content creator" isHome={true}>
-  <div class="wrapper">
-    <div class="indexNavBar">
-      <div><img src="kroenger_logo_transparent.png" alt="kroenger" /></div>
-      <div class="menuList">
+<Layout
+  title="Home"
+  description="Kroenger is an environment related content creator"
+  isHome={true}
+>
+  <div class="wrapper h-screen">
+    <div class="indexNavBar-s z-20 w-full flex absolute justify-between px-4">
+      <div>
+        <img
+          src="kroenger_logo_transparent.png"
+          alt="kroenger"
+          class="w-auto h-12 md:h-20 mt-2"
+        />
+      </div>
+      <div
+        class="menuList
+      text-md sm:text-md md:text-lg lg:text-lg xl:text-xl
+      gap-x-4 sm:gap-x-6 md:gap-x-8"
+      >
         <MobileMenu client:visible />
         <a href="about" aria-label="about"><div>About</div></a>
-        <a href="eco-friendly-tips" aria-label="eco-friendly-tips"><div>Eco-friendly Tips</div></a>
+        <a href="eco-friendly-tips" aria-label="eco-friendly-tips"
+          ><div>Eco-friendly Tips</div></a
+        >
         <a href="calendar" aria-label="calendar"><div>Calendar</div></a>
-        <a href="wildlife-biology-careers-and-oppurtunities" aria-label="wildlife"><div>Wildlife Biology</div></a>
-        <a href="https://www.typinks.com/categories/kroenger.html"
-           aria-label="blog"><div>Blog</div>
+        <a
+          href="wildlife-biology-careers-and-oppurtunities"
+          aria-label="wildlife"><div>Wildlife Biology</div></a
+        >
+        <a
+          href="https://www.typinks.com/categories/kroenger.html"
+          aria-label="blog"
+          ><div>Blog</div>
         </a>
       </div>
     </div>
-    <div class="headerText">
-      <h2>Sustainable things are rare</h2>
-      <h1>SCAVENGE TO SURVIVE</h1>
+    <div
+      class="absolute w-screen h-screen z-10 flex justify-center items-center flex-col text-white bg-[#011627ad] text-center
+    gap-y-12 md:gap-y-12"
+    >
+      <h1 class="text-xl font-semibold
+      md:text-xl md:font-bold">
+        Sustainable Things are Rare
+      </h1>
+      <p class="text-5xl md:text-5xl font-bold">SCAVENGE TO SURVIVE</p>
       <a href="#about" aria-label="learn more">
-        <button class="learnMoreButtonHome">Learn More!</button>
+        <button
+          class="text-secondary bg-primary hover:bg-secondary hover:text-primary font-bold p-4 rounded-2xl text-xl"
+          >Learn More!</button
+        >
       </a>
     </div>
-    <div class="home-1"></div>
-    <div class="aboutUs" id="about">
-      <h2>About us</h2>
-      <h1>The planet is no more living, but is surviving tough challenges.</h1>
+    <div class="home-1 h-screen w-screen aspect-square"></div>
+    <div
+      class="relative text-center px-[20%] py-[5%] z-2 bg-white h-screen flex flex-col gap-y-4 sm:gap-y-6 md:gap-y-8 lg:gap-y-10
+    text-md sm:text-lg md:text-xl lg:text-2xl"
+      id="about"
+    >
+      <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">About us</h2>
+      <p class="font-extrabold">
+        The planet is no more living, but is surviving tough challenges.
+      </p>
       <p>
         Climate change, Booming population, Degrading ecosystems, etc. are some
         of the devastating situations we are going through. Adverse climatic
@@ -47,32 +83,39 @@ import { MobileMenu } from "../components/MobileMenu.jsx";
         Sustainable and Eco friendly future.
       </p>
     </div>
-    <div class="moreInfo">
-      <div class="infoList">
-        <div>
+    <div
+      class="absolute flex flex-col lg:flex-row items-center justify-around z-5 text-white text-center bg-[#011627A6] h-screen w-full
+    font-semibold
+    text-lg md:text-xl lg:text-2xl
+    gap-x-16 p-8"
+    >
+      <div class="flex flex-col gap-y-4">
+        <div class="text-gray-400">
           We don’t inherit the earth from our ancestors, we borrow it from our
           children
         </div>
-        <h2>You know the basics, yah that's it.</h2>
+        <h2 class="text-center">You know the basics, yah that's it.</h2>
         <hr />
-        <h2>Reuse</h2>
-        <div>Simply reuse things that get your objectives done.</div>
+        <h2 class="text-center">Reuse</h2>
+        <div class="text-gray-400">
+          Simply reuse things that get your objectives done.
+        </div>
         <hr />
-        <h2>Reduce</h2>
-        <div>
+        <h2 class="text-center">Reduce</h2>
+        <div class="text-gray-400">
           Reduce as much as you can because "use less" is not that useless
         </div>
         <hr />
-        <h2>Recycle</h2>
-        <div>Recycle is the key to sustainability</div>
+        <h2 class="text-center">Recycle</h2>
+        <div class="text-gray-400">Recycle is the key to sustainability</div>
       </div>
-      <div class="quote">
+      <div class="text-bold text-2xl md:text-3xl lg:text-4xl">
         Things won't get sustainable easily, but once you establish your
         benchmark, you yourself can change the world!
       </div>
     </div>
-    <div class="home-2"></div>
-    <div class="social">
+    <div class="home-2 h-screen w-full"></div>
+    <div class="relative text-center min-h-[25vh] z-2 bg-white">
       <Social />
     </div>
   </div>
@@ -83,10 +126,6 @@ import { MobileMenu } from "../components/MobileMenu.jsx";
     --astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
   }
 
-  h1 {
-    margin: 2rem 0;
-  }
-
   main {
     max-width: 60ch;
   }
@@ -95,7 +134,6 @@ import { MobileMenu } from "../components/MobileMenu.jsx";
     width: 95%;
     height: 2vh;
     position: absolute;
-    z-index: 6;
     display: flex;
     justify-content: space-between;
     padding: 1rem 3rem 3rem 3rem;
@@ -114,7 +152,6 @@ import { MobileMenu } from "../components/MobileMenu.jsx";
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    font-size: 1.2rem;
     margin-top: 2.1rem;
   }
 
@@ -128,89 +165,23 @@ import { MobileMenu } from "../components/MobileMenu.jsx";
     color: var(--bg-primary);
   }
 
-  .learnMoreButtonHome {
-    cursor: pointer;
-    width: 10rem;
-    height: 3rem;
-    color: var(--bg-secondary);
-    background-color: var(--bg-primary);
-    font-size: 1.5rem;
-    border-radius: 1.5rem;
-    padding: 1%;
-    border: 0;
-    font-weight: bold;
-  }
-
   .learnMoreButtonHome:hover {
     background-color: var(--bg-secondary);
     color: var(--bg-primary);
   }
 
-  .aboutUs {
-    position: relative;
-    text-align: center;
-    padding-inline: 20%;
-    padding-block: 5%;
-    height: 85vh;
-    z-index: 2;
-    background-color: white;
-    font-size: 1.5rem;
-  }
-
-  .headerText {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 5;
-    color: white;
-    height: 105vh;
-    width: 100vw;
-    padding-inline: auto;
-    background: rgba(1, 22, 39, 0.5);
-  }
-
-  .social {
-    position: relative;
-    text-align: center;
-    min-height: 25vh;
-    z-index: 2;
-    background-color: white;
-  }
-
   .wrapper {
-    height: 100vh;
-    width: 100vw;
     perspective: 10px;
     transform-style: preserve-3d;
     overflow-x: hidden;
     overflow-y: auto;
   }
 
-  .moreInfo {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    z-index: 5;
-    color: white;
-    height: 100vh;
-    width: 100vw;
-    background: rgba(1, 22, 39, 0.65);
-  }
-
   .infoList {
     display: flex;
     flex-direction: column;
-    font-size: 1.2rem;
     font-weight: bolder;
     width: 34%;
-  }
-
-  .infoList > h2 {
-    font-size: 1.8rem;
   }
 
   .infoList > div {
@@ -231,56 +202,22 @@ import { MobileMenu } from "../components/MobileMenu.jsx";
     height: 0.0102rem;
   }
 
-  .quote {
-    font-size: 3rem;
-    width: 34%;
-    font-weight: bold;
-  }
-
   .home-1,
   .home-2 {
     z-index: -1;
   }
 
   /* Small screens */
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 640px) {
     .indexNavBar > div > img {
       width: 10rem;
-    }
-
-    .headerText {
-      height: 100vh;
-    }
-
-    .headerText > h1 {
-      padding-inline: 3rem;
-      text-align: center;
-    }
-
-    .aboutUs {
-      height: 100vh;
-      font-size: 1rem;
-    }
-
-    .aboutUs > h1 {
-      font-size: 1.9rem;
-    }
-
-    .moreInfo {
-      flex-direction: column;
-      text-align: center;
     }
 
     .infoList {
       display: flex;
       flex-direction: column;
-      font-size: 1rem;
       font-weight: bolder;
       width: 85%;
-    }
-
-    .infoList > h2 {
-      font-size: 1.4rem;
     }
 
     .infoList > div {
@@ -300,12 +237,6 @@ import { MobileMenu } from "../components/MobileMenu.jsx";
       height: 0.0102rem;
     }
 
-    .quote {
-      width: 90%;
-      font-size: 2rem;
-      font-weight: bold;
-    }
-
     .menuList > a {
       display: none;
     }
@@ -315,36 +246,29 @@ import { MobileMenu } from "../components/MobileMenu.jsx";
     }
 
     .home-1 {
-      width: 100vw;
-      height: 100vh;
-      background-size: 100% 100%;
       background-image: url("../home-mobile-1.jpeg");
     }
 
     .home-2 {
-      width: 100vw;
-      height: 100vh;
-      background-size: 150% 100%;
       background-image: url("../home-2.jpeg");
+      background-position-x: 25%;
+      background-position-y: 35%;
+      background-size: 200% 100%;
     }
   }
 
   /* Large screens */
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 640px) {
     .home-1 {
-      width: 100%;
-      height: 105vh;
-      background-size: 100% 100%;
       background-image: url("../home-1.jpeg");
-      transform: translateZ(-40px) scale(8);
+      background-size: 110% 150%;
     }
 
     .home-2 {
-      width: 100%;
-      height: 100%;
-      background-size: 100% 100%;
       background-image: url("../home-2.jpeg");
-      transform: translateZ(-10px) scale(2);
+      background-position-x: 25%;
+      background-position-y: 45%;
+      background-size: 110% 150%;
     }
   }
 </style>
