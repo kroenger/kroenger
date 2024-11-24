@@ -53,14 +53,14 @@ export const november = [
         description: `Observed on November 19th, this day raises awareness about the importance of sanitation and hygiene in ensuring human health and dignity. It highlights the global sanitation crisis and advocates for sustainable solutions to ensure everyone has access to safe and clean toilets. By promoting better sanitation practices, we can improve health outcomes and protect the environment.`
     },
     {
-        date: "26 November",
-        day: "Buy Nothing Day",
-        description: `Buy Nothing Day is a day of protest in which participants pledge to buy nothing for 24 hours to raise awareness of the negative environmental, social, and political consequences of overconsumption. It is typically observed in North America on the Friday following Thanksgiving Day in the United States, which is one of the busiest shopping days of the year.`
-    },
-    {
         date: "27 November",
         day: "Turtle Adoption Day",
         description: `Different from World Turtle Day, World Turtle Adoption Day focuses on the adoption and care of turtles that are stranded and are in need of love.  Turtles are reptiles that live in various habitats around the world, but many of them are threatened by human activities, such as hunting, pollution, and habitat loss.`
+    },
+    {
+        date: "29 November",
+        day: "Buy Nothing Day",
+        description: `Buy Nothing Day is a day of protest in which participants pledge to buy nothing for 24 hours to raise awareness of the negative environmental, social, and political consequences of overconsumption. It is typically observed in North America on the Friday following Thanksgiving Day in the United States, which is one of the busiest shopping days of the year.`
     },
     {
         date: "29 November",
