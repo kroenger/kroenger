@@ -1,5 +1,10 @@
 export const december = [
     {
+        date: "1 December",
+        day: "Antarctica Day",
+        description: `Celebrated on December 1st, this day marks the anniversary of the signing of the Antarctic Treaty in 1959. The treaty established Antarctica as a scientific preserve and banned military activity on the continent. Antarctica Day is a global event promoting international cooperation in scientific research and the protection of this pristine environment. It highlights the importance of preserving one of the world's most unique and remote ecosystems for future generations.`
+    },
+    {
         date: "3 December",
         day: "World Coati Day",
         description: `Celebrated on December 3rd, this day raises awareness and promotes conservation efforts for the coatimundi, a relative of the raccoon found in Central and South America. Founded by Australian wildlife specialist and zookeeper Rhianna Wilton, it highlights the beauty and significance of these unique, underappreciated animals, coinciding with the middle of the coati breeding season.`
