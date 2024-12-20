@@ -6,17 +6,12 @@ interface Props {
 }
 const { date, day, description } = Astro.props;
 let createdImagePath = day.trim().toLowerCase().split(" ").join("-");
-createdImagePath = `/src/images/days/${createdImagePath}.png`;
-let imagePath = "/src/images/days/default.png";
+let  completeCreatedImagePath = `../../public/days/${createdImagePath}.png`;
 
 import type { ImageMetadata } from "astro";
-const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/images/days/*.{jpeg,jpg,png,gif}"
+const daysImages = import.meta.glob<{ default: ImageMetadata }>(
+  "../../public/days/*.png"
 );
-if (!images[createdImagePath]) {
-  // if image doesn't exist revert to default
-  createdImagePath = imagePath;
-}
 ---
 
 <div class="max-w-sm rounded overflow-hidden shadow-lg shadow-[#a1d783]">
@@ -26,7 +21,7 @@ if (!images[createdImagePath]) {
     >
       {date}
     </span>
-    <img class="w-full" src={createdImagePath} alt={day} width="28" height="28"/>
+    <img class="w-full" src={daysImages[completeCreatedImagePath] ? `./days/${createdImagePath}.png` : './days/default.png'} alt={day} width="28" height="28"/>
     <div class="px-6 py-4">
       <div class="font-bold text-xl mb-2">{day}</div>
       <p class="text-gray-700 text-xs overflow-hidden">
