@@ -21,7 +21,7 @@ const daysImages = import.meta.glob<{ default: ImageMetadata }>(
     >
       {date}
     </span>
-    <img class="w-full" src={daysImages[completeCreatedImagePath] ? `./days/${createdImagePath}.png` : './days/default.png'} alt={day} width="28" height="28"/>
+    <img class="w-full" src={daysImages[completeCreatedImagePath] ? `../days/${createdImagePath}.png` : '../days/default.png'} alt={day} width="28" height="28"/>
     <div class="px-6 py-4">
       <div class="font-bold text-xl mb-2">{day}</div>
       <p class="text-gray-700 text-xs overflow-hidden">
