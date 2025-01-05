@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const folderPath = './src/images/days'; // Path to your folder
+const folderPath = './public/days';
 
 // Function to convert string to small-caps URL format
 function toUrlFormat(str) {
