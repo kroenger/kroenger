@@ -28,7 +28,9 @@ const uniqueHashtags = newRandomHashtags.filter(onlyUnique);
 <div class="tipsCard">
   <article>
     <div class="image">
-      <img src={`../tips/${id}.webp`} alt={`${tip}`} />
+      <a href={`../tips/${id}.webp`} target="_blank" rel="noopener noreferrer">
+        <img src={`../tips/${id}.webp`} alt={`${tip}`} />
+      </a>
     </div>
     <h3 class="tipNumber">Eco friendly tip #{tipNumber}</h3>
     <p class="tip">
@@ -44,7 +46,8 @@ const uniqueHashtags = newRandomHashtags.filter(onlyUnique);
   .tipsCard {
     display: grid;
     width: 25rem;
-    box-shadow: 0 10px 15px -3px hsl(148, 41%, 29%),
+    box-shadow:
+      0 10px 15px -3px hsl(148, 41%, 29%),
       0 4px 6px -2px hsl(147, 41%, 29%);
   }
   .tipsCard > article > :nth-child(n):not(.image) {
@@ -83,7 +86,8 @@ const uniqueHashtags = newRandomHashtags.filter(onlyUnique);
     .tipsCard {
       display: grid;
       width: 15.6rem;
-      box-shadow: 0 10px 15px -3px hsl(148, 41%, 29%),
+      box-shadow:
+        0 10px 15px -3px hsl(148, 41%, 29%),
         0 4px 6px -2px hsl(147, 41%, 29%);
     }
     .tipsCard > article > :nth-child(n):not(.image) {
