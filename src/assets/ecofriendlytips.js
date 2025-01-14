@@ -492,5 +492,11 @@ export const ecofriendlytips = [
         tipNumber: 76,
         tip: `Place dried coffee grounds in a small bowl & leave them in areas where you want to freshen the air. These will absorb and neutralize unpleasant odors.`,
         hashtags: ["homecare", "coffee", "air"]
+    },
+    {
+        id: "digital-detox",
+        tipNumber: 77,
+        tip: `Internet has a carbon footprint! Try "digital decluttering" by reducing screen time, deleting old emails, and using energy-efficient devices.`,
+        hashtags: ["digitaldetox", "mentalhealth", "carbonfootprint"]
     }
 ];
