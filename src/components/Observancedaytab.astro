@@ -1,5 +1,4 @@
 ---
-import ObservanceDay from "./ObservanceDay.astro";
 import ObservanceDayNew from "./ObservanceDayNew.astro";
 
 interface Props {
@@ -9,9 +8,13 @@ interface Props {
     date: string;
     day: string;
     description: string;
+    links?: {
+      label: string;
+      value: string;
+    }[];
   }[];
 }
-const { month, data,currentMonth } = Astro.props;
+const { month, data, currentMonth } = Astro.props;
 let monthLowercase = month.toLowerCase();
 ---
 
