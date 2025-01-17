@@ -1,0 +1,151 @@
+---
+import Social from "../../components/Social.astro";
+import Layout from "../../layouts/Layout.astro";
+import { april } from "../../observanceDaysData/april";
+import { august } from "../../observanceDaysData/august";
+import { december } from "../../observanceDaysData/december";
+import { february } from "../../observanceDaysData/february";
+import { january } from "../../observanceDaysData/january";
+import { july } from "../../observanceDaysData/july";
+import { june } from "../../observanceDaysData/june";
+import { march } from "../../observanceDaysData/march";
+import { may } from "../../observanceDaysData/may";
+import { november } from "../../observanceDaysData/november";
+import { october } from "../../observanceDaysData/october";
+import { september } from "../../observanceDaysData/september";
+
+export function getStaticPaths() {
+  const datas = [
+    january,
+    february,
+    march,
+    april,
+    may,
+    june,
+    july,
+    august,
+    september,
+    october,
+    november,
+    december,
+  ];
+
+  const mergedData = datas.flat();
+
+  const paths = mergedData.map((data) => {
+    let dayId = data.day.trim().toLowerCase().split(" ").join("-");
+    let dateId = data.date.split(" ").join("-").toLowerCase();
+    return {
+      params: {
+        id: `${dayId}-${dateId}`,
+      },
+    };
+  });
+  return [...paths];
+}
+
+const { id } = Astro.params;
+
+const datas = [
+  january,
+  february,
+  march,
+  april,
+  may,
+  june,
+  july,
+  august,
+  september,
+  october,
+  november,
+  december,
+];
+
+const mergedData = datas.flat();
+
+const pageDataArray = mergedData
+  .map((data) => {
+    let dayId = data.day.trim().toLowerCase().split(" ").join("-");
+    let dateId = data.date.split(" ").join("-").toLowerCase();
+    if (id === `${dayId}-${dateId}`) {
+      return { ...data, dayId };
+    }
+  })
+  .filter(Boolean);
+
+const pageData = pageDataArray[0];
+
+let createdImagePath = pageData?.day.trim().toLowerCase().split(" ").join("-");
+let completeCreatedImagePath = `../../../public/days/${createdImagePath}.png`;
+
+import type { ImageMetadata } from "astro";
+const daysImages = import.meta.glob<{ default: ImageMetadata }>(
+  "../../../public/days/*.png"
+);
+---
+
+<Layout
+  title=`${pageData?.day}`
+  description=`${pageData?.description}`
+  activePage="calendar"
+>
+  <div class="p-4 lg:ml-20 sm:mb-16 lg:mb-0">
+    <article>
+      <div
+        class="flex pt-12 px-6 md:px-20 items-center justify-center bg-hero md:h-screen overflow-hidden"
+      >
+        <div class="flex flex-col gap-6 md:flex-row items-center max-w-8xl">
+          <div class="w-full md:w-1/2 lg:pr-32">
+            <div class="flex items-center justify-center md:justify-start my-4">
+              <span
+                class="bg-[#a1d783] py-1 px-2 rounded-lg text-md font-bold text-secondary"
+                >{pageData?.date}</span
+              >
+            </div>
+            <h1
+              class="text-4xl lg:text-5xl text-center md:text-left text-secondary leading-tight font-bold"
+            >
+              {pageData?.day}
+            </h1>
+            <h3
+              class="mt-6 md:mt-10 text-md lg:text-xl text-center md:text-left text-gray-700 font-light tracking-wider leading-relaxed"
+            >
+              {pageData?.description}
+            </h3>
+            <div class="flex my-4">
+              {
+                pageData?.links.map((link) => (
+                  <a
+                    href=`${link.value}?ref=kroenger.org`
+                    target="_blank"
+                    class="bg-green-100 text-green-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400"
+                    >{link.label}</a
+                  >
+                ))
+              }
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+            <a
+              href={daysImages[completeCreatedImagePath]
+                ? `../days/${createdImagePath}.png`
+                : "../days/default.png"}
+              target="_blank"
+            >
+              <img
+                src={daysImages[completeCreatedImagePath]
+                  ? `../days/${createdImagePath}.png`
+                  : "../days/default.png"}
+                alt={pageData?.day}
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div>
+      <Social />
+    </div>
+  </div>
+</Layout>
