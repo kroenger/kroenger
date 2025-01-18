@@ -20,19 +20,19 @@ var minute = date.getMinutes();
 var second = date.getSeconds();
 
 // Pad with zeros if needed
-const monthNew = month < 10 ? '0' + month : month;
-const dayNew = day < 10 ? '0' + day : day;
-const hourNew = hour < 10 ? '0' + hour : hour;
-const minuteNew = minute < 10 ? '0' + minute : minute;
-const secondNew = second < 10 ? '0' + second : second;
+const monthNew = month < 10 ? "0" + month : month;
+const dayNew = day < 10 ? "0" + day : day;
+const hourNew = hour < 10 ? "0" + hour : hour;
+const minuteNew = minute < 10 ? "0" + minute : minute;
+const secondNew = second < 10 ? "0" + second : second;
 
 // Format the date and time as a string
-var formattedDate = year + '-' + monthNew + '-' + dayNew;
-var formattedTime = hourNew + ':' + minuteNew + ':' + secondNew;
-var formattedDateTime = formattedDate + ' ' + formattedTime;
+var formattedDate = year + "-" + monthNew + "-" + dayNew;
+var formattedTime = hourNew + ":" + minuteNew + ":" + secondNew;
+var formattedDateTime = formattedDate + " " + formattedTime;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -50,7 +50,7 @@ var formattedDateTime = formattedDate + ' ' + formattedTime;
     <meta property="og:site_name" content="Kroenger" />
     <meta name="description" content={description} />
     <meta name="image" content={ogImageLink} />
-    
+
     <meta property="og:title" content={title} />
     <meta property="og:type" content="article" />
     <meta property="og:url" content={Astro.url} />
@@ -72,9 +72,9 @@ var formattedDateTime = formattedDate + ' ' + formattedTime;
   <body>
     {
       !isHome ? (
-        <nav class="navbar">
-          <ul class="navbar-nav text-green-500 gap-x-8">
-            <li class="logo">
+        <nav class="navbar w-screen fixed bg-primary transition-width duration-600 ease-in-out bottom-0 md:bottom-auto md:top-0 md:h-screen md:w-24 md:hover:w-56">
+          <ul class="list-none flex flex-row md:flex-col items-center text-green-500">
+            <li class="logo hidden md:block">
               <a href="/" class="nav-link" aria-label="home">
                 <span class="link-text logo-text">Kroenger</span>
                 <svg
@@ -103,7 +103,7 @@ var formattedDateTime = formattedDate + ' ' + formattedTime;
               </a>
             </li>
 
-            <li class="nav-item">
+            <li class="w-full">
               <a
                 href="/"
                 class={activePage == "home" ? `nav-link active` : `nav-link`}
@@ -122,7 +122,7 @@ var formattedDateTime = formattedDate + ' ' + formattedTime;
               </a>
             </li>
 
-            <li class="nav-item">
+            <li class="w-full">
               <a
                 href="/about"
                 class={activePage == "about" ? `nav-link active` : `nav-link`}
@@ -140,7 +140,7 @@ var formattedDateTime = formattedDate + ' ' + formattedTime;
               </a>
             </li>
 
-            <li class="nav-item">
+            <li class="w-full">
               <a
                 href="/calendar"
                 class={
@@ -163,7 +163,7 @@ var formattedDateTime = formattedDate + ' ' + formattedTime;
               </a>
             </li>
 
-            <li class="nav-item">
+            <li class="w-full">
               <a
                 href="/eco-friendly-tips"
                 class={activePage == "tips" ? `nav-link active` : `nav-link`}
@@ -182,9 +182,9 @@ var formattedDateTime = formattedDate + ' ' + formattedTime;
               </a>
             </li>
 
-            <li class="nav-item">
+            <li class="w-full">
               <a
-                href="https://www.typinks.com/categories/kroenger.html"
+                href="https://www.typinks.com/category/kroenger"
                 class={activePage == "blog" ? `nav-link active` : `nav-link`}
                 aria-label="blog"
               >
@@ -206,36 +206,14 @@ var formattedDateTime = formattedDate + ' ' + formattedTime;
     <main>
       <slot />
     </main>
+
+    <style is:global>
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+    </style>
+
     <style>
-      .navbar {
-        position: fixed;
-        background-color: var(--bg-primary);
-        width: 5rem;
-        height: 100vh;
-        transition: width 600ms ease;
-      }
-
-      .navbar-nav {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-      }
-
-      .nav-item {
-        width: 100%;
-      }
-
-      .nav-item:last-child {
-        margin-top: auto;
-      }
-
-      .navbar:hover {
-        width: 16rem;
-      }
       .nav-link {
         display: flex;
         align-items: center;
@@ -243,6 +221,7 @@ var formattedDateTime = formattedDate + ' ' + formattedTime;
         color: var(--bg-secondary);
         text-decoration: none;
         transition: var(--transition-speed);
+        padding-inline-start: 2rem;
       }
 
       .nav-link:hover {
@@ -268,7 +247,6 @@ var formattedDateTime = formattedDate + ' ' + formattedTime;
       .nav-link svg {
         width: 2rem;
         min-width: 2rem;
-        margin: 0 1.5rem;
       }
 
       .fa-secondary {
@@ -301,7 +279,6 @@ var formattedDateTime = formattedDate + ' ' + formattedTime;
       .logo svg {
         transform: rotate(0deg);
         transition: var(--transition-speed);
-        margin-left: 1rem;
       }
 
       @font-face {
@@ -339,49 +316,24 @@ var formattedDateTime = formattedDate + ' ' + formattedTime;
 
       /* Small screens */
       @media only screen and (max-width: 1024px) {
-        .navbar {
-          bottom: 0;
-          width: 100vw;
-          height: 5rem;
-        }
-
-        .navbar:hover {
-          bottom: 0;
-          width: 100vw;
-          height: 5rem;
-        }
-
-        .logo {
-          display: none;
-        }
-
         .navbar-nav {
           flex-direction: row;
         }
 
         .nav-link {
           justify-content: center;
-        }
-
-        main {
-          margin: 0;
+          padding:0;
         }
       }
 
       /* Large screens */
       @media only screen and (min-width: 1024px) {
-        .navbar {
-          top: 0;
-          width: 5rem;
-          height: 100vh;
-        }
-
         .navbar:hover .link-text {
           display: inline;
         }
 
         .navbar:hover .logo svg {
-          margin-left: 12rem;
+          margin-left: 10rem;
         }
 
         .navbar:hover .logo-text {
