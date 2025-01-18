@@ -1,8 +1,5 @@
----
----
-
-<div class="socialComponent">
-  <div class="socialTitle">Be Social! Let's Get Connected</div>
+<div class="m-0 p-4 mt-4">
+  <div class="m-0 text-left text-3xl md:text-5xl font-bold">Be Social! Let's Get Connected</div>
   <div class="socialIcons">
     <a href="https://www.instagram.com/kroenger/" aria-label="instagram">
       <div class="instagram">
@@ -337,22 +334,7 @@ C408.786,24.662,384.124,0,353.701,0z"
 </div>
 
 <style>
-  .socialComponent {
-    margin: 0;
-    padding: 1.5%;
-  }
-  .socialTitle {
-    margin: 0;
-    text-align: left;
-    font-size: 2.2rem;
-    font-weight: 900;
-    padding-inline-start: 10rem;
-  }
   .socialIcons {
-    /* display: flex;
-    flex-direction: row;
-    position: relative;
-    justify-content: space-evenly; */
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
@@ -370,13 +352,8 @@ C408.786,24.662,384.124,0,353.701,0z"
 
   /* Small screens */
   @media only screen and (max-width: 600px) {
-    .socialTitle {
-      padding-inline-start: 0;
-      padding-top: 1rem;
-      font-size: 1.6rem;
-    }
     .socialIcons {
-      grid-template-columns: repeat(auto-fill, minmax(4rem, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(3rem, 1fr));
       gap: 3rem;
       padding-inline: 25%;
     }
