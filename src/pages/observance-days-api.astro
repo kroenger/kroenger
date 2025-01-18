@@ -9,8 +9,10 @@ import Layout from "../layouts/Layout.astro";
   activePage="calendar"
 >
   <div class="wrapper">
-    <h1>Observance Days API</h1>
-    <p class="description">
+    <h1 class="text-center font-bold text-3xl md:text-5xl mt-8">
+      Observance Days API
+    </h1>
+    <p class="text-center px-2 lg:px-8 text-lg md:text-xl mt-2">
       The API for the Kroenger Observance Days Calendar allows users to retrieve
       information about significant environmental observance days throughout the
       year. It provides detailed descriptions of each day, including its
@@ -24,21 +26,75 @@ import Layout from "../layouts/Layout.astro";
     </p>
     <br />
     <br />
-    <h2>Observance Days API List</h2>
-    <div>
-      <ul class="apiListUl">
-        <li><a href="https://kroenger.org/api/observance-days/january">January</a></li>
-        <li><a href="https://kroenger.org/api/observance-days/february">February</a></li>
-        <li><a href="https://kroenger.org/api/observance-days/march">March</a></li>
-        <li><a href="https://kroenger.org/api/observance-days/april">April</a></li>
-        <li><a href="https://kroenger.org/api/observance-days/may">May</a></li>
-        <li><a href="https://kroenger.org/api/observance-days/june">June</a></li>
-        <li><a href="https://kroenger.org/api/observance-days/july">July</a></li>
-        <li><a href="https://kroenger.org/api/observance-days/august">August</a></li>
-        <li><a href="https://kroenger.org/api/observance-days/september">September</a></li>
-        <li><a href="https://kroenger.org/api/observance-days/october">October</a></li>
-        <li><a href="https://kroenger.org/api/observance-days/november">November</a></li>
-        <li><a href="https://kroenger.org/api/observance-days/december">December</a></li>
+    <h2 class="text-xl md:text-3xl font-semibold mb-4 mx-4">
+      Observance Days API List
+    </h2>
+    <div class="mx-4">
+      <ul class="flex flex-col gap-4 font-bold">
+        <li>
+          <a
+            class="text-secondary hover:text-primary"
+            href="https://kroenger.org/api/observance-days/january">January</a>
+        </li>
+        <li>
+          <a
+            class="text-secondary hover:text-primary"
+            href="https://kroenger.org/api/observance-days/february"
+            >February</a>
+        </li>
+        <li>
+          <a
+            class="text-secondary hover:text-primary"
+            href="https://kroenger.org/api/observance-days/march">March</a>
+        </li>
+        <li>
+          <a
+            class="text-secondary hover:text-primary"
+            href="https://kroenger.org/api/observance-days/april">April</a>
+        </li>
+        <li>
+          <a
+            class="text-secondary hover:text-primary"
+            href="https://kroenger.org/api/observance-days/may">May</a>
+        </li>
+        <li>
+          <a
+            class="text-secondary hover:text-primary"
+            href="https://kroenger.org/api/observance-days/june">June</a>
+        </li>
+        <li>
+          <a
+            class="text-secondary hover:text-primary"
+            href="https://kroenger.org/api/observance-days/july">July</a>
+        </li>
+        <li>
+          <a
+            class="text-secondary hover:text-primary"
+            href="https://kroenger.org/api/observance-days/august">August</a>
+        </li>
+        <li>
+          <a
+            class="text-secondary hover:text-primary"
+            href="https://kroenger.org/api/observance-days/september"
+            >September</a>
+        </li>
+        <li>
+          <a
+            class="text-secondary hover:text-primary"
+            href="https://kroenger.org/api/observance-days/october">October</a>
+        </li>
+        <li>
+          <a
+            class="text-secondary hover:text-primary"
+            href="https://kroenger.org/api/observance-days/november"
+            >November</a>
+        </li>
+        <li>
+          <a
+            class="text-secondary hover:text-primary"
+            href="https://kroenger.org/api/observance-days/december"
+            >December</a>
+        </li>
       </ul>
     </div>
     <div>
@@ -48,34 +104,9 @@ import Layout from "../layouts/Layout.astro";
 </Layout>
 
 <style>
-  h1 {
-    text-align: center;
-  }
-
-  .description {
-    text-align: center;
-    font-size: 1.5rem;
-  }
-
   .wrapper {
     margin-inline: 17rem;
     margin-top: 5rem;
-  }
-
-  .apiListUl {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-  }
-
-  .apiListUl > li > a{
-    text-decoration: none;
-    cursor: pointer;
-    color: var(--bg-secondary);
-  }
-
-  .apiListUl > li > a:hover {
-    color: var(--bg-primary);
   }
 
   /* Small screens */
@@ -84,15 +115,6 @@ import Layout from "../layouts/Layout.astro";
       margin-inline: 0;
       margin-top: 0;
       margin-bottom: 6rem;
-    }
-
-    h2 {
-      text-align: center;
-      font-size: 2rem;
-    }
-
-    .description {
-      margin: 1rem;
     }
   }
 </style>
