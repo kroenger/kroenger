@@ -1,5 +1,4 @@
 import { defineConfig } from 'astro/config';
-import { getImageUrls } from './utils/getImageUrls';
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
@@ -9,11 +8,7 @@ export default defineConfig({
   site: 'https://kroenger.org',
   integrations: [
     react(), 
-    sitemap({
-      customPages: [
-        ...getImageUrls('https://kroenger.org')
-      ]
-    }), 
+    sitemap(), 
     tailwind()
   ]
 });
