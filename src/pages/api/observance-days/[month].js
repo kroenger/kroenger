@@ -11,8 +11,8 @@ import { october } from "../../../observanceDaysData/october";
 import { november } from "../../../observanceDaysData/november";
 import { december } from "../../../observanceDaysData/december";
 
-export default function handler(req, res) {
-  const { month } = req.query;
+export async function GET({ params }) {
+  const { month } = params;
   let monthData;
   
   switch (month) {
@@ -54,7 +54,14 @@ export default function handler(req, res) {
       break;
   }
 
-  res.status(200).json(monthData);
+  return new Response(
+    JSON.stringify(monthData), {
+      status: 200,
+      headers: {
+        "Content-Type": "application/json"
+      }
+    }
+  );
 }
 
 export function getStaticPaths() {
