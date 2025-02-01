@@ -11,9 +11,10 @@ import { october } from "../../../observanceDaysData/october";
 import { november } from "../../../observanceDaysData/november";
 import { december } from "../../../observanceDaysData/december";
 
-export const GET = ({ params, request }) => {
-  const month = params.month;
+export default function handler(req, res) {
+  const { month } = req.query;
   let monthData;
+  
   switch (month) {
     case "january":
       monthData = january
@@ -52,14 +53,8 @@ export const GET = ({ params, request }) => {
       monthData = december
       break;
   }
-  return new Response(
-    JSON.stringify(monthData),
-    {
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    }
-  );
+
+  res.status(200).json(monthData);
 }
 
 export function getStaticPaths() {
