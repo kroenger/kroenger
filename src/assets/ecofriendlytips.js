@@ -498,5 +498,11 @@ export const ecofriendlytips = [
         tipNumber: 77,
         tip: `Internet has a carbon footprint! Try "digital decluttering" by reducing screen time, deleting old emails, and using energy-efficient devices.`,
         hashtags: ["digitaldetox", "mentalhealth", "carbonfootprint"]
+    },
+    {
+        id: "sustainable-nfts",
+        tipNumber: 78,
+        tip: `Non-fungible tokens (NFTs) are cool, but their energy use isn't! Opt for eco-friendly NFT platforms like Tezos or support digital artists using sustainable practices.`,
+        hashtags: ["NFTs", "sustainable", "carbonneutral"]
     }
 ];
