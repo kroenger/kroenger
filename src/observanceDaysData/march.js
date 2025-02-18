@@ -2,8 +2,9 @@ export const march = [
     {
         date: "3 March",
         day: "World Wildlife Day",
-        description: `The theme for World Wildlife Day 2024 is Connecting People and Planet: Exploring Digital Innovation in Wildlife Conservation. 
-        This theme highlights the role of digital technologies and innovations in protecting and conserving wildlife and their habitats.`,
+        description: `Wildlife conservation is crucial for maintaining biodiversity, ecosystem services, and the well-being of 
+        humans and other species. This year's theme calls for investing in people and planet for wildlife conservation. Climate change,
+        habitat loss, poaching, and illegal wildlife trade are some of the major threats to wildlife.`,
         links:[
             {
                 label: "worldwildlifeday.org",
@@ -25,8 +26,9 @@ export const march = [
     {
         date: "14 March",
         day: "International Day of Action for Rivers",
-        description: `The theme for 2024 is Water for All. This theme focuses on the uneven access to clean water and the pollution 
-        occurring due to human activities. Participate in river cleanups, webinars, walks, or paddleboard events in your area or online.`,
+        description: `A day to celebrate the world's rivers and take action to protect them from threats such as pollution, 
+        dam construction, and over-extraction. Rivers are essential for providing water, food, and livelihoods to millions of people and animals. 
+        As this year's theme suggests, our future depends upon rivers existence.`,
         links:[
             {
                 label: "internationalrivers.org",
@@ -45,9 +47,8 @@ export const march = [
     {
         date: "18 March",
         day: "Global Recycling Day",
-        description: `The theme for 2024 is Recycling Heroes. This theme recognizes the people, places, and activities that 
-        showcase what an important role recycling plays in contributing to a greener future. Watch or listen to some documentaries, 
-        videos, or podcasts that explain the value and challenges of recycling.`,
+        description: `Recyling has high stakes as we move into a very fast consumerist economy. This day calls for honor and motivates
+        all who are putting efforts in recycling. By recognizing and rewarding recycling endeavors help the recyling heros and moreover the world.`,
         links:[
             {
                 label: "globalrecyclingday.com",
@@ -58,10 +59,23 @@ export const march = [
     {
         date: "21 March",
         day: "International Day of Forests",
-        description: `The theme for 2024 is Forests and Health. This theme recognizes the linkages between forests and human health, 
-        and how forests can provide food, medicine, clean air, and water, as well as reduce stress and improve well-being. Visit a 
-        forest museum, park, or reserve and learn about the work of forest managers, scientists, and communities.`,
+        description: `Forest and food are inseperable as the food web is highly depend on the forest for both humans and other animals.
+        Threat to the forest are indeed a threat to food security, implicitly a threat to the existence of life on earth. Forest plays many roles
+        in the biodiversity and the existence of life on earth.`,
         links:[]
+    },
+    {
+        date: "21 March",
+        day: "World Day for Glaciers",
+        description: `Glaciers are crucial for regulating the global climate and providing freshwater, essential for billions of people. However, 
+        due to climate change, driven mainly by human activities since the 1800s, these vital resources are rapidly melting. Glacial preservation is
+        crucial for fighting climate change and controlling natural disasters.`,
+        links: [
+            {
+                label: "un-glaciers.org",
+                value: "https://www.un-glaciers.org/en"
+            }
+        ]
     },
     {
         date: "22 March",
@@ -95,5 +109,18 @@ export const march = [
         It was primarily led by women who hugged trees to prevent them from being cut down. The movement played a significant 
         role in promoting environmental conservation and raising awareness about the importance of forests for local communities.`,
         links:[]
+    },
+    {
+        date: "30 March",
+        day: "International day of zero waste",
+        description: `Sustainable production and consumption are need of the hour. Fast consumerism causing immense pressure on the earth resources,
+        and fueling the environmental destruction. Zero waste in both production and consumption is a must, if we want to meet our sustainability goals
+        for a sustainable future.`,
+        links: [
+            {
+                label: "internationaldayofzerowaste.org",
+                value: "https://internationaldayofzerowaste.org/"
+            }
+        ]
     }
 ]
