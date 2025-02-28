@@ -81,8 +81,9 @@ export const march = [
         date: "22 March",
         day: "World Water Day",
         description: `An annual event that aims to raise awareness and take action on the global water crisis. It is held on 22 March 
-        every year since 1993, and each year has a different theme related to water issues. The theme for 2024 is “Leveraging Water for Peace”, 
-        which focuses on how water can be a tool for cooperation and conflict resolution among communities and countries.`,
+        every year since 1993, and each year has a different theme related to water issues. As this year's theme suggests, Glaciers are 
+        critical to life – their meltwater is essential for drinking water, agriculture, industry, clean energy production and healthy 
+        ecosystems.`,
         links:[
             {
                 label: "worldwaterday.org",
