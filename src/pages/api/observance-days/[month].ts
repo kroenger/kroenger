@@ -1,3 +1,5 @@
+import type { APIRoute } from 'astro';
+
 import { january } from "../../../observanceDaysData/january";
 import { february } from "../../../observanceDaysData/february";
 import { march } from "../../../observanceDaysData/march";
@@ -11,7 +13,7 @@ import { october } from "../../../observanceDaysData/october";
 import { november } from "../../../observanceDaysData/november";
 import { december } from "../../../observanceDaysData/december";
 
-export async function GET({ params }) {
+export const GET : APIRoute = ({ params }) => {
   const { month } = params;
   let monthData;
   
@@ -55,12 +57,7 @@ export async function GET({ params }) {
   }
 
   return new Response(
-    JSON.stringify(monthData), {
-      status: 200,
-      headers: {
-        "Content-Type": "application/json"
-      }
-    }
+    JSON.stringify(monthData)
   );
 }
 
