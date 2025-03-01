@@ -81,6 +81,10 @@ const nextItem = mergedData
     let dayId = data.day.trim().toLowerCase().split(" ").join("-");
     let dateId = data.date.split(" ").join("-").toLowerCase();
     if (id === `${dayId}-${dateId}`) {
+      if (index === mergedData.length - 1) {
+        return {day: mergedData[0].day, dayId: `${mergedData[0].day.trim().toLowerCase().split(" ").join("-")}-${mergedData[0].date.split(" ").join("-").toLowerCase()}`};
+      }
+
       let nextDayId = mergedData[index + 1].day.trim().toLowerCase().split(" ").join("-");
       let nextDateId = mergedData[index + 1].date.split(" ").join("-").toLowerCase();
       return {day: mergedData[index + 1].day, dayId: `${nextDayId}-${nextDateId}`};
