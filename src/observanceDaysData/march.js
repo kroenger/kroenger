@@ -104,7 +104,7 @@ export const march = [
         links:[]
     },
     {
-        date: "25 March",
+        date: "26 March",
         day: "Anniversary of Chipko Movement",
         description: `The Chipko Movement was a forest conservation movement that started in the 1970s in Uttarakhand, India. 
         It was primarily led by women who hugged trees to prevent them from being cut down. The movement played a significant 
