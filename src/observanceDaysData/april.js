@@ -2,8 +2,8 @@ export const april = [
     {
         date: "3 April",
         day: "World Aquatic Animal Day",
-        description: `A day to raise awareness about the critical roles these animals play in our ecosystems and the threats 
-        they face from human activities. The theme for World Aquatic Animal Day in 2024 is “Animals as Community”`,
+        description: `Aquatic animals are crucial in sustaining life on earth through nutrient cycling, oxygen production, and carbon sequestration. 
+        But they face immense threats, such as habitat destruction, pollution, overfishing, and climate change.`,
         links: [{
             label: "World Aquatic Animal Day",
             value: "https://www.worldaquaticanimalday.org/"
@@ -12,9 +12,9 @@ export const april = [
     {
         date: "7 April",
         day: "World Health Day",
-        description: `The day mark the anniversary of the founding of the World Health Organization (WHO). The theme for 
-        World Health Day 2024 is "My Health, My Right". This theme underscores the fundamental human right to access 
-        quality healthcare services, education, and information. `,
+        description: `The day mark the anniversary of the founding of the World Health Organization (WHO). The theme for World Health Day 2025 is 
+        "Healthy beginnings, hopeful futures". This theme will urge governments and the health community to ramp up efforts to end preventable maternal 
+        and newborn deaths, and to prioritize women’s longer-term health and well-being.`,
         links: []
     },
     {
