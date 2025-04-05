@@ -5,7 +5,7 @@ export const april = [
         description: `Aquatic animals are crucial in sustaining life on earth through nutrient cycling, oxygen production, and carbon sequestration. 
         But they face immense threats, such as habitat destruction, pollution, overfishing, and climate change.`,
         links: [{
-            label: "World Aquatic Animal Day",
+            label: "worldaquaticanimalday.org",
             value: "https://www.worldaquaticanimalday.org/"
         }]
     },
@@ -44,12 +44,12 @@ export const april = [
     {
         date: "22 April",
         day: "Earth Day",
-        description: `The theme for Earth Day in 2024 is “Planet vs. Plastics”. This theme focuses on the urgent need to address plastic 
-        pollution and its detrimental effects on human and planetary health. It calls for a significant reduction in plastic production 
-        and use, aiming for a 60% reduction by 2040, and ultimately striving for a plastic-free future.`,
+        description: `The theme for Earth Day in 2025 is “Our Power, Our Planet”. This theme focuses on the urgent need to address the climate crisis 
+        and transition to clean energy sources. By harnessing the power of renewable energy, we can reduce greenhouse gas emissions,
+        create jobs, and protect our planet for future generations. `,
         links: [
             {
-                label: "Earth Day",
+                label: "earthday.org",
                 value: "https://www.earthday.org/"
             }
         ]
@@ -82,7 +82,7 @@ export const april = [
         aims to educate people about the threats that frogs face, such as habitat loss, pollution, disease, invasive species, and climate change.`,
         links: [
             {
-                label: "Save the Frogs",
+                label: "savethefrogs.com",
                 value: "https://www.savethefrogs.com/"
             }
         ]
@@ -92,7 +92,12 @@ export const april = [
         day: "World Veterinary Day",
         description: `The day aims to raise awareness of the important role that veterinarians play in the health and welfare of animals, people, 
         and the environment. Veterinarians not only treat sick and injured animals, but also prevent diseases, ensure food safety and quality, 
-        protect wildlife and biodiversity, and contribute to scientific research and innovation.  The theme for 2023 is "Promoting diversity, equity, and inclusiveness in the veterinary profession"`,
-        links: []
+        protect wildlife and biodiversity, and contribute to scientific research and innovation.`,
+        links: [
+            {
+                label: "worldvet.org",
+                value: "https://www.worldvet.org/"
+            }
+        ]
     }
 ]
