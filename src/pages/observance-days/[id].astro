@@ -105,6 +105,7 @@ const daysImages = import.meta.glob<{ default: ImageMetadata }>(
   title=`${pageData?.day}`
   description=`${pageData?.description}`
   activePage="calendar"
+  ogImage={daysImages[completeCreatedImagePath] ? `https://www.kroenger.org/days/${createdImagePath}.png` : `https://www.kroenger.org/days/default.png`}
 >
   <div class="p-4 lg:ml-24 sm:mb-16 lg:mb-0">
     <article>
