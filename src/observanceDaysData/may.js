@@ -8,7 +8,7 @@ export const may = [
         products, which indicates that they come from fisheries that meet the highest standards of sustainability 
         and traceability.  There are seven species of tuna, and they are found in all the major oceans of the world, 
         except for the polar regions.`,
-        links:[]
+        links: []
     },
     {
         date: "12 May",
@@ -16,7 +16,7 @@ export const may = [
         description: `The theme for the International Day of Plant Health in 2024 focuses on “Plant health, safe trade, and digital technology,” 
         recognizing the role of innovation in ensuring the health of plants globally. It’s a call to action for everyone to contribute to keeping 
         our plants healthy, which is essential for food security, sustainable economies, and livelihoods.`,
-        links:[]
+        links: []
     },
     {
         date: "Second Saturday of May",
@@ -25,7 +25,7 @@ export const may = [
         play in the survival of migratory birds, as they provide essential energy and nutrients, especially during migration and 
         breeding seasons. The decline in insect populations is a major concern, as it has a direct impact on the migratory bird 
         species that depend on them.`,
-        links:[]
+        links: []
     },
     {
         date: "20 May",
@@ -33,7 +33,7 @@ export const may = [
         description: `This year's theme is 'Bee Engaged with Youth'. Bees are essential pollinators for many crops, such as fruits, vegetables, nuts and seeds. Without bees, 
         many crops would have lower yields and quality, or even fail to produce at all. We can all help by supporting organic and sustainable farming practices, 
         planting bee-friendly plants in our gardens and balconies, avoiding or minimizing pesticide use, and providing water and shelter for bees.`,
-        links:[]
+        links: []
     },
     {
         date: "22 May",
@@ -41,14 +41,14 @@ export const may = [
         description: `This year's theme  is "Be part of the Plan". This theme is a call to action for all stakeholders to support the implementation 
         of the Kunming-Montreal Global Biodiversity Framework, also known as the Biodiversity Plan1. The Biodiversity Plan is a significant global effort 
         to halt and reverse the loss of biodiversity.`,
-        links:[]
+        links: []
     },
     {
         date: "23 May",
         day: "World Turtle Day",
         description: `The day educates people about the threats that turtles and tortoises face, such as smuggling, habitat destruction, pet trade, and live exotic food markets. 
         According to experts, turtles are the most threatened of the major groups of vertebrates, more so than birds, mammals, and fish.`,
-        links:[]
+        links: []
     },
     {
         date: "25 May",
@@ -57,14 +57,19 @@ export const may = [
         have with human and non-human species, lands, and waters. This day is marked by celebrations, events, and action campaigns 
         organized by people around the world to connect fish, rivers, and people. This year's theme is Free Flow. On this day, 
         we focus on the importance of free-flowing rivers and their impact on migratory fish.`,
-        links:[]
+        links: []
     },
     {
         date: "31 May",
         day: "World No Tobacco Day",
-        description: `This year's theme is "Protecting children from tobacco industry interference". This day is an opportunity to highlight the health risks 
-        associated with tobacco use and advocate for effective policies to reduce tobacco consumption. The focus is on giving a platform to young people who are 
-        calling for the tobacco industry to stop targeting them with harmful products`,
-        links:[]
+        description: `This year’s theme, "Unmasking the Appeal," focuses on exposing the deceptive marketing tactics used by the tobacco 
+        industry to attract consumers, especially young people. With over 8 million deaths annually linked to tobacco use, urgent action 
+        is needed to combat this public health crisis.`,
+        links: [
+            {
+                title: "who.int",
+                url: "https://www.who.int/campaigns/world-no-tobacco-day"
+            }
+        ]
     }
 ]
