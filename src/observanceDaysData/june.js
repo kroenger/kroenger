@@ -6,7 +6,7 @@ export const june = [
         for millions of people and marine species. Help coral reefs by being responsible visitors, using reef-friendly 
         products, choosing sustainable seafood, reducing pollution and emissions, and spreading awareness. Support coral 
         reef restoration projects by donating funds to organisations such as coral gardeners.`,
-        links:[]
+        links: []
     },
     {
         date: "3 June",
@@ -14,15 +14,18 @@ export const june = [
         description: `An event that promotes the use of bicycles as a means of sustainable transportation, health, education, 
         and social inclusion. Celebrate the day by riding your bike, joining a local cycling event, wearing a helmet and reef-friendly 
         sunscreen, and spreading the word about the importance of bicycles for our planet and our future.`,
-        links:[]
+        links: []
     },
     {
         date: "5 June",
         day: "World Environment Day",
         description: `It aims to raise awareness and inspire action for the protection and restoration of our natural world. 
         The day also recognizes the efforts and achievements of individuals, communities, and organizations that are working to 
-        create a greener future. The Kingdom of Saudi Arabia will host this year’s World Environment Day`,
-        links:[]
+        create a greener future.`,
+        links: [{
+            label: "worldenvironmentday.global",
+            Value: "https://www.worldenvironmentday.global/"
+        }]
     },
     {
         date: "6 June",
@@ -30,7 +33,12 @@ export const june = [
         description: `Green roofs are important for climate change adaptation, biodiversity, urban greening, and well-being. 
         Green roofs are nature’s allies in the fight against climate change. They soothe the scorching heat, save money and energy, 
         soak up the rain, store the carbon, shelter the wildlife, and uplift the mood. `,
-        links:[]
+        links: [
+            {
+                label: "worldgreenroofday.com",
+                Value: "https://worldgreenroofday.com/"
+            }
+        ]
     },
     {
         date: "8 June",
@@ -39,7 +47,12 @@ export const june = [
         least 30% of our lands, waters, and ocean by 2030 (30x30) is necessary to give the planet a chance to recover and protect 
         millions of species from extinction. By supporting this 30×30 project, together we can protect our planet’s life support 
         systems – specifically the interconnected issues of ocean, climate, and biodiversity.`,
-        links:[]
+        links: [
+            {
+                label: "worldoceansday.org",
+                Value: "https://worldoceansday.org/"
+            }
+        ]
     },
     {
         date: "15 June",
@@ -48,7 +61,7 @@ export const june = [
         through cameras. The day aims to raise awareness of the importance of nature photography for the conservation and protection 
         of plants, wildlife, and landscapes. The day also encourages people to explore and enjoy nature through their lenses and share 
         their images with others.`,
-        links:[]
+        links: []
     },
     {
         date: "16 June",
@@ -56,7 +69,7 @@ export const june = [
         description: `Sea turtles help maintain the health of seagrass beds and coral reefs that benefit commercially valuable species 
         such as shrimp, lobster, and tuna. Turtles seem to prefer red, orange and yellow-coloured food. They appear to investigate these 
         colours more than others when looking for a meal. So reducing marine plastic pollution is critical to saving turtles.`,
-        links:[]
+        links: []
     },
     {
         date: "16 June",
@@ -65,15 +78,22 @@ export const june = [
         It aims to create awareness about the importance of consuming fresh vegetables for metabolism, growth, development, 
         and disease prevention. The day also encourages people to visit local farmers’ markets, grow their own vegetables, 
         or try new recipes with fresh veggies`,
-        links:[]
+        links: []
     },
     {
         date: "17 June",
         day: "World Day to Combat Desertification and Drought",
-        description: `The theme for 2024 is “United for Land: Our Legacy. Our Future.” This theme underscores the importance of 
-        collective efforts in land stewardship to ensure the stability and prosperity of billions of people around the world. Every second, 
-        an equivalent of four football fields of healthy land becomes degraded. This adds up to a total of 100 million hectares each year`,
-        links:[]
+        description: `Every second, an equivalent of four football fields of healthy land becomes degraded. This adds up to a total of 100 million hectares each year.
+        With 40% of the world’s land already degraded, urgent action is needed to restore ecosystems and ensure sustainable land management.`,
+        links: []
+    },
+    {
+        date: "18 June",
+        day: "Sustainable Gastronomy Day",
+        description: `Sustainable Gastronomy Day is a day to celebrate and promote sustainable food practices that respect 
+        the environment, culture, and health. It aims to raise awareness about the importance of sustainable gastronomy for 
+        achieving the Sustainable Development Goals (SDGs) and to encourage people to enjoy and share their culinary traditions.`,
+        links: []
     },
     {
         date: "21 June",
@@ -81,7 +101,12 @@ export const june = [
         description: `Giraffes help regulate the growth of plants, disperse seeds, create habitats for other animals, 
         and provide food for predators and scavengers. Their presence or absence can signal changes in vegetation, climate, 
         and wildlife populations. They are threatened by habitat loss, civil unrest, illegal hunting, and ecological changes in their natural range. `,
-        links:[]
+        links: [
+            {
+                label: "giraffeconservation.org",
+                Value: "https://giraffeconservation.org/world-giraffe-day/"
+            }
+        ]
     },
     {
         date: "22 June",
@@ -90,6 +115,11 @@ export const june = [
         medicine cabinets, and cultural treasures. Rainforests are threatened by deforestation, poaching, climate change, and fires 
         that harm their ecosystems and the planet. To save rainforests, we need to use their resources wisely, support ecotourism, 
         regulate their exploitation, and advocate for their protection.`,
-        links:[]
+        links: [
+            {
+                label: "worldrainforestday.org",
+                Value: "https://worldrainforestday.org/"
+            }
+        ]
     }
 ]

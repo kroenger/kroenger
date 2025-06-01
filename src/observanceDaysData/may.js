@@ -67,8 +67,8 @@ export const may = [
         is needed to combat this public health crisis.`,
         links: [
             {
-                title: "who.int",
-                url: "https://www.who.int/campaigns/world-no-tobacco-day"
+                label: "who.int",
+                value: "https://www.who.int/campaigns/world-no-tobacco-day"
             }
         ]
     }
