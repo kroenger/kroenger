@@ -41,7 +41,12 @@ export const july = [
         from habitat loss, poaching, disease, and climate change. It is a day to respect and protect these wonderful animals 
         and to support the efforts to conserve them and their habitats. Chimpanzees are also vital for the health and diversity 
         of the forests they live in, as they disperse seeds and create habitats for other animals. `,
-        links:[]
+        links:[
+            {
+                label: "worldchimpanzeeday.org",
+                value: "https://worldchimpanzeeday.org/"
+            }
+        ]
     },
     {
         date: "14 July",
