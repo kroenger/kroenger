@@ -26,9 +26,15 @@ fs.readdir(folderPath, (err, files) => {
       const newFileName = toUrlFormat(file.replace('.png', '')) + '.png';
       const newPath = path.join(folderPath, newFileName);
 
-      fs.rename(oldPath, newPath, err => {
-        if (err) {
-          console.error(`Error renaming file ${file}: ${err}`);
+      // Skip if the file already has the correct name
+      if (file === newFileName) {
+        console.log(`Skipped ${file} (already in correct format)`);
+        return;
+      }
+
+      fs.rename(oldPath, newPath, (renameErr) => {
+        if (renameErr) {
+          console.error(`Error renaming file ${file}: ${renameErr}`);
         } else {
           console.log(`Renamed ${file} to ${newFileName}`);
         }
