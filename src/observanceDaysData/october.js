@@ -2,15 +2,18 @@ export const october = [
     {
         date: "2 October",
         day: "World Farm Animals Day",
-        description: `World Farm Animals Day was founded to highlight the poor conditions
-        suffered by some farm animals, and promote awareness against cruelty.`,
-        links:[]
+        description: `World Farm Animals Day was founded to highlight the poor conditions suffered by some farm animals, and promote awareness against cruelty.`,
+        links:[
+            {
+                label: "dayforanimals.com",
+                value: "https://dayforanimals.com/"
+            }
+        ]
     },
     {
         date: "First Monday of October",
         day: "World Habitat Day",
-        description: `This day is intended to remind the world of its collective responsibility for the future of the human habitat. 
-        This years theme is "Mind the Gap. Leave No One and No Place Behind'`,
+        description: `This day is intended to remind the world of its collective responsibility for the future of the human habitat. This years theme is "Urban crisis response: Building and planning for the unexpected".`,
         links:[]
     },
     {
@@ -19,7 +22,12 @@ export const october = [
         description: `To raise the status of animals in order to improve welfare standards around the globe. 
         Through increased awareness and education we can create a world where animals are always 
         recognised as sentient beings and full regard is always paid to their welfare.`,
-        links:[]
+        links:[
+            {
+                label: "worldanimalday.org.uk",
+                value: "https://www.worldanimalday.org.uk/"
+            }
+        ]
     },
     {
         date: "7 October",
@@ -27,7 +35,12 @@ export const october = [
         description: `A day to raise awareness about the need for market access for cotton products from least developed countries, 
         foster sustainable trade policies, & enable developing countries to benefit more from the cotton value chain. Celebrated in 
         collaboration with the WTO, FAO, UNCTAD, ITC and ICAC. China & India are the world's largest producers of cotton`,
-        links:[]
+        links:[
+            {
+                label: "worldcottonday.com",
+                value: "https://www.worldcottonday.com/"
+            }
+        ]
     },
     {
         date: "8 October",
@@ -42,7 +55,12 @@ export const october = [
         description: `The theme for 2024, “Empowering the Next Generation for a Resilient Future,” focuses on the role of education in protecting and 
         empowering youth against disasters. It highlights the importance of integrating disaster risk reduction into school curricula and ensuring that 
         children and youth are equipped with the knowledge and skills to respond to emergencies.`,
-        links:[]
+        links:[
+            {
+                label: "iddrr.undrr.org",
+                value: "https://iddrr.undrr.org/"
+            }
+        ]
     },
     {
         date: "Second Saturday of October",
@@ -50,7 +68,16 @@ export const october = [
         description: `This year’s theme, “Protect Insects, Protect Birds,” underscores the vital connection between insects and the survival of migratory birds. 
         Insects provide essential nourishment for birds during their long migratory journeys and breeding seasons. The decline in insect populations due to 
         habitat loss, pesticide use, and climate change poses a significant threat to these birds.`,
-        links:[]
+        links:[
+            {
+                label: "worldmigratorybirdday.org",
+                value: "https://www.worldmigratorybirdday.org/"
+            },
+            {
+                label: "migratorybirdday.org",
+                value: "https://www.migratorybirdday.org"
+            }
+        ]
     },
     {
         date: "Second Saturday of October",
@@ -66,7 +93,16 @@ export const october = [
         description: `Aims to raise awareness about the growing issue of electronic waste and promote responsible e-waste management, this year's theme, 
         “Join the E-Waste Hunt – Retrieve, Recycle, and Revive!” encourages individuals to declutter their homes of unused or broken electronic devices. 
         By recycling these items, valuable materials can be recovered and reused, reducing the need for raw material extraction and mitigating climate change`,
-        links:[]
+        links:[
+            {
+                label: "ewasteday.org",
+                value: "https://ewasteday.org/"
+            },
+            {
+                label: "weee-forum.org",
+                value: "https://weee-forum.org/iewd-about/"
+            }
+        ]
     },
     {
         date: "16 October",
@@ -91,7 +127,24 @@ export const october = [
         description: `Initiated by the organization Kangaroos Alive in 2020, this day highlights the importance of protecting these iconic marsupials, 
         which are often subjected to hunting and habitat loss. The theme for 2024, “Free to Roam their Songlines,” emphasizes the cultural and ecological 
         significance of kangaroos, particularly in relation to Aboriginal spirituality and the ancient songlines that connect the Australian landscape.`,
-        links:[]
+        links:[
+            {
+                label: "kangaroosalive.org",
+                value: "https://kangaroosalive.org/"
+            },
+            {
+                label: "worldkangarooday.org",
+                value: "https://www.worldkangarooday.org/"
+            },
+            {
+                label: "bluemountainsworldkangarooday.org",
+                value: "https://bluemountainsworldkangarooday.org/index.html"
+            },
+            {
+                label: "kangaroo.org.au",
+                value: "https://www.kangaroo.org.au/worldkangarooday/"
+            }
+        ]
     },
     {
         date: "Last Friday of October",
@@ -99,6 +152,15 @@ export const october = [
         description: `Lemurs are unique primates found only on the island of Madagascar, and they play a crucial role in maintaining the health of their 
         ecosystems. Unfortunately, many lemur species are threatened by habitat destruction, hunting, and the illegal pet trade. World Lemur Day aims to 
         highlight these issues and promote conservation efforts to protect these fascinating creatures.`,
-        links:[]
+        links:[
+            {
+                label: "lemurconservationnetwork.org",
+                value: "https://www.lemurconservationnetwork.org/world-lemur-day/"
+            },
+            {
+                label: "lemurreserve.org",
+                value: "https://www.lemurreserve.org/"
+            }
+        ]
     }
 ]
