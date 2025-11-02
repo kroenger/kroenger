@@ -4,7 +4,12 @@ export const november = [
         day: "World Vegan Day",
         description: `Veganism is the practice of abstaining from the use of animal products, particularly in diet. 
         Vegan food reduces the risks of many diseases and provides you with healthier alternatives to satiate your cravings.`,
-        links:[]
+        links:[
+            {
+                label: "vegan-day.org",
+                value: "https://vegan-day.org/en/"
+            }
+        ]
     },
     {
         date: "3 November",
@@ -20,14 +25,32 @@ export const november = [
         description: `One Health is a collaborative, multisectoral, and trans-disciplinary approach — working at the local,
         regional, national, and global levels — with the goal of achieving optimal health outcomes recognizing the interconnection
         between people, animals, plants, and their shared environment.`,
-        links:[]
+        links:[
+            {
+                label: "onehealthday.com",
+                value: "https://www.onehealthday.com/"
+            },
+            {
+                label: "onehealthinitiative.com",
+                value: "https://www.onehealthinitiative.com/"
+            },
+            {
+                label: "onehealthcommission.org",
+                value: "https://www.onehealthcommission.org/"
+            }
+        ]
     },
     {
         date: "3 November",
         day: "International Day for Biosphere Reserves",
         description: `The World Network of Biosphere Reserves (WNBR) was formed in 1971, as a backbone for biodiversity conservation,
         ecosystem restoration, and living in harmony with nature.`,
-        links:[]
+        links:[
+            {
+                label: "unesco.org",
+                value: "https://www.unesco.org/en/mab/map?hub=66369"
+            }
+        ]
     },
     {
         date: "5 November",
@@ -35,7 +58,12 @@ export const november = [
         description: `Tsunamis can have long-lasting effects on the environment, economy and society of the affected areas. 
         It can be prevented or mitigated by adopting various measures, such as building seawalls, breakwaters, mangroves and other coastal barriers, 
         relocating people and assets away from the shore, enforcing strict building codes and land use regulations, and improving disaster risk governance and coordination.`,
-        links:[]
+        links:[
+            {
+                label: "tsunamiday.undrr.org",
+                value: "https://tsunamiday.undrr.org/"
+            }
+        ]
     },
     {
         date: "6 November",
@@ -67,7 +95,12 @@ export const november = [
         description: `Observed on November 19th, this day raises awareness about the importance of sanitation and hygiene in ensuring human health and dignity. 
         It highlights the global sanitation crisis and advocates for sustainable solutions to ensure everyone has access to safe and clean toilets. By promoting 
         better sanitation practices, we can improve health outcomes and protect the environment.`,
-        links:[]
+        links:[
+            {
+                label: "unwater.org",
+                value: "https://www.unwater.org/our-work/world-toilet-day"
+            }
+        ]
     },
     {
         date: "27 November",
@@ -91,13 +124,23 @@ export const november = [
         description: `The jaguar is an icon of cultural heritage and sustainable development in Central and South America, where it has been revered for centuries by 
         indigenous peoples. The jaguar is also a vital part of the ecosystems it inhabits, helping to maintain the balance of prey and predators, and dispersing seeds 
         of many plants.`,
-        links:[]
+        links:[
+            {
+                label: "internationaljaguarday.org",
+                value: "https://www.internationaljaguarday.org/"
+            }
+        ]
     },
     {
         date: "30 November",
         day: "International ESG Day",
         description: `A global initiative that aims to raise awareness and action on environmental, social, and governance (ESG) principles. The celebration 
         recognizes the efforts of individuals, organizations, and communities who are committed to shaping a sustainable, ethical, and inclusive future.`,
-        links:[]
+        links:[
+            {
+                label: "esg-institute.org",
+                value: "https://www.the-esg-institute.org/international-esg-day"
+            }
+        ]
     }
 ]
