@@ -99,6 +99,23 @@ import type { ImageMetadata } from "astro";
 const daysImages = import.meta.glob<{ default: ImageMetadata }>(
   "../../../public/days/*.png"
 );
+
+// JSON-LD Structured Data
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": pageData?.day,
+  "description": pageData?.description,
+  "url": Astro.url.href,
+  "image": daysImages[completeCreatedImagePath] 
+    ? `https://www.kroenger.org/days/${createdImagePath}.png`
+    : `https://www.kroenger.org/days/default.png`,
+  "organizer": {
+    "@type": "Organization",
+    "name": "Kroenger",
+    "url": "https://www.kroenger.org"
+  }
+};
 ---
 
 <Layout
@@ -106,6 +123,7 @@ const daysImages = import.meta.glob<{ default: ImageMetadata }>(
   description=`${pageData?.description}`
   activePage="calendar"
   ogImage={daysImages[completeCreatedImagePath] ? `https://www.kroenger.org/days/${createdImagePath}.png` : `https://www.kroenger.org/days/default.png`}
+  structuredData={structuredData}
 >
   <div class="p-4 lg:ml-24 sm:mb-16 lg:mb-0">
     <article>
