@@ -101,12 +101,25 @@ const daysImages = import.meta.glob<{ default: ImageMetadata }>(
 );
 
 // JSON-LD Structured Data
+const getStartDate = () => {
+  if (!pageData?.date) return new Date().toISOString().split('T')[0];
+  // Parse date like "20 January" and get the year
+  const [day, month] = pageData.date.split(" ");
+  const date = new Date(`${month} ${day}, ${new Date().getFullYear()}`);
+  return date.toISOString().split('T')[0];
+};
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Event",
   "name": pageData?.day,
   "description": pageData?.description,
   "url": Astro.url.href,
+  "startDate": getStartDate(),
+  "location": {
+    "@type": "VirtualLocation",
+    "url": "https://www.kroenger.org"
+  },
   "image": daysImages[completeCreatedImagePath] 
     ? `https://www.kroenger.org/days/${createdImagePath}.png`
     : `https://www.kroenger.org/days/default.png`,
