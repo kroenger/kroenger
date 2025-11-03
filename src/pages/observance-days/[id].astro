@@ -109,6 +109,14 @@ const getStartDate = () => {
   return date.toISOString().split('T')[0];
 };
 
+const getEndDate = () => {
+  if (!pageData?.date) return new Date().toISOString().split('T')[0];
+  // End date is the same day for awareness days
+  const [day, month] = pageData.date.split(" ");
+  const date = new Date(`${month} ${day}, ${new Date().getFullYear()}`);
+  return date.toISOString().split('T')[0];
+};
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Event",
@@ -116,8 +124,11 @@ const structuredData = {
   "description": pageData?.description,
   "url": Astro.url.href,
   "startDate": getStartDate(),
+  "endDate": getEndDate(),
+  "eventStatus": "https://schema.org/EventScheduled",
   "location": {
-    "@type": "VirtualLocation",
+    "@type": "Place",
+    "name": "Online",
     "url": "https://www.kroenger.org"
   },
   "image": daysImages[completeCreatedImagePath] 
@@ -127,6 +138,18 @@ const structuredData = {
     "@type": "Organization",
     "name": "Kroenger",
     "url": "https://www.kroenger.org"
+  },
+  "performer": {
+    "@type": "Organization",
+    "name": "Kroenger",
+    "url": "https://www.kroenger.org"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.kroenger.org",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
   }
 };
 ---
