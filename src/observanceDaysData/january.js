@@ -8,16 +8,7 @@ export const january = [
         colony of emperor penguins has nearly disappeared after changes in sea/ice conditions made 
         their breeding ground unstable. The species might lose anywhere between 50% and 70% of its 
         global population by the end of this century.`,
-        links: [
-            {
-                label: "Penguin Awareness Day",
-                value: "https://www.awarenessdays.com/awareness-days-calendar/penguin-awareness-day-2022/"
-            },
-            {
-                label: "Penguin Awareness Day",
-                value: "https://www.worldpenguinday.com/"
-            }
-        ]
+        links: []
     },
     {
         date: "24 January",
@@ -27,7 +18,7 @@ export const january = [
         millions of children, youth and adults behind.`,
         links: [
             {
-                label: "International Day of Education",
+                label: "un.org",
                 value: "https://www.un.org/en/observances/education-day"
             }
         ]
@@ -39,7 +30,7 @@ export const january = [
         energy and to promote the use of renewable energy sources. Clean energy is energy that is produced from
         renewable resources, such as sunlight, wind, and water. Clean energy is important because it helps to reduce
         pollution and greenhouse gas emissions, which are major contributors to climate change.`,
-        links:[]
+        links: []
     },
     {
         date: "28 January",
@@ -48,13 +39,14 @@ export const january = [
         to the point where governments will support anti-emission measures. Since CO2 is such a big contributor to 
         climate change, this event seeks to aid the world’s transition to a cleaner environment. The awareness of the 
         need to reduce greenhouse gas or CO2 emissions has been on the radar of scientists for more than 100 years.`,
-        links:[]
-    },{
+        links: []
+    },
+    {
         date: "31 January",
         day: "International Zebra Day",
         description: `A day to celebrate and learn more about these amazing striped equines. Zebras are iconic and striking creatures, 
         but they also face numerous threats, such as habitat loss, poaching, and climate change. The Grévy's zebra, in particular, 
         has experienced a significant decline in population due to habitat fragmentation and human activities.`,
-        links:[]
+        links: []
     }
 ]
