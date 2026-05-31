@@ -4,43 +4,32 @@ export const may = [
         day: "World Tuna Day",
         description: `A day serves as a platform to raise awareness about the importance of tuna conservation, 
         promote sustainable fishing practices, and encourage collaboration among stakeholders to ensure the 
-        future of tuna populations. When shopping look for the MSC blue fish tick label when shopping for tuna 
-        products, which indicates that they come from fisheries that meet the highest standards of sustainability 
-        and traceability.  There are seven species of tuna, and they are found in all the major oceans of the world, 
-        except for the polar regions.`,
+        future of tuna populations.`,
         links: []
     },
     {
         date: "12 May",
         day: "International Day of Plant Health",
-        description: `The theme for the International Day of Plant Health in 2024 focuses on “Plant health, safe trade, and digital technology,” 
-        recognizing the role of innovation in ensuring the health of plants globally. It’s a call to action for everyone to contribute to keeping 
-        our plants healthy, which is essential for food security, sustainable economies, and livelihoods.`,
+        description: `Healthy plants are essential for a healthy planet. They provide us with food, oxygen, medicine, and shelter, and they support biodiversity and ecosystems.`,
         links: []
     },
     {
         date: "Second Saturday of May",
         day: "World Migratory Bird Day",
-        description: `This year’s theme is "Protect Insects, Protect Birds". This theme highlights the critical role insects 
-        play in the survival of migratory birds, as they provide essential energy and nutrients, especially during migration and 
-        breeding seasons. The decline in insect populations is a major concern, as it has a direct impact on the migratory bird 
-        species that depend on them.`,
+        description: `From the Arctic to the Antarctic, migratory birds connect our world. They are indicators of the health of our environment and provide us with many benefits, such as pollination, pest control, and cultural value. `,
         links: []
     },
     {
         date: "20 May",
         day: "World Bee Day",
-        description: `This year's theme is 'Bee Engaged with Youth'. Bees are essential pollinators for many crops, such as fruits, vegetables, nuts and seeds. Without bees, 
-        many crops would have lower yields and quality, or even fail to produce at all. We can all help by supporting organic and sustainable farming practices, 
-        planting bee-friendly plants in our gardens and balconies, avoiding or minimizing pesticide use, and providing water and shelter for bees.`,
+        description: `Bees are essential pollinators for many crops, such as fruits, vegetables, nuts and seeds. Without bees, 
+        many crops would have lower yields and quality, or even fail to produce at all.`,
         links: []
     },
     {
         date: "22 May",
         day: "International Day for Biological Diversity",
-        description: `This year's theme  is "Be part of the Plan". This theme is a call to action for all stakeholders to support the implementation 
-        of the Kunming-Montreal Global Biodiversity Framework, also known as the Biodiversity Plan1. The Biodiversity Plan is a significant global effort 
-        to halt and reverse the loss of biodiversity.`,
+        description: `Biodiversity is critical for the health of our planet and the well-being of all living beings. It provides us with food, medicine, clean air and water, and many other benefits.`,
         links: []
     },
     {
@@ -55,16 +44,14 @@ export const may = [
         day: "World Fish Migration Day",
         description: `A global awareness campaign celebrated every two years to highlight the connections that migratory fishes 
         have with human and non-human species, lands, and waters. This day is marked by celebrations, events, and action campaigns 
-        organized by people around the world to connect fish, rivers, and people. This year's theme is Free Flow. On this day, 
-        we focus on the importance of free-flowing rivers and their impact on migratory fish.`,
+        organized by people around the world to connect fish, rivers, and people.`,
         links: []
     },
     {
         date: "31 May",
         day: "World No Tobacco Day",
-        description: `This year’s theme, "Unmasking the Appeal," focuses on exposing the deceptive marketing tactics used by the tobacco 
-        industry to attract consumers, especially young people. With over 8 million deaths annually linked to tobacco use, urgent action 
-        is needed to combat this public health crisis.`,
+            description: `With over 8 million deaths annually linked to tobacco use, urgent action 
+        is needed to combat this public health crisis. This global health crisis not only affects smokers but also non-smokers through secondhand smoke, leading to a wide range of health issues including respiratory diseases, cardiovascular problems, and various cancers.`,
         links: [
             {
                 label: "who.int",

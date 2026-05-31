@@ -2,123 +2,121 @@ export const june = [
     {
         date: "1 June",
         day: "World Reef Day",
-        description: `Coral reefs are essential ocean habitats that provide food, protection, income, and biodiversity 
-        for millions of people and marine species. Help coral reefs by being responsible visitors, using reef-friendly 
-        products, choosing sustainable seafood, reducing pollution and emissions, and spreading awareness. Support coral 
-        reef restoration projects by donating funds to organisations such as coral gardeners.`,
-        links: []
+        description: "Protecting vital marine habitats that sustain 25% of all ocean life, coastal economies, and global biodiversity.",
+        links: [
+            {
+                label: "worldreefday.org",
+                value: "https://worldreefday.org/"
+            }
+        ]
     },
     {
         date: "3 June",
         day: "World Bicycle Day",
-        description: `An event that promotes the use of bicycles as a means of sustainable transportation, health, education, 
-        and social inclusion. Celebrate the day by riding your bike, joining a local cycling event, wearing a helmet and reef-friendly 
-        sunscreen, and spreading the word about the importance of bicycles for our planet and our future.`,
+        description: "Promoting the bicycle as a zero-emission, healthy, and accessible tool for sustainable urban transportation.",
         links: []
     },
     {
         date: "5 June",
         day: "World Environment Day",
-        description: `It aims to raise awareness and inspire action for the protection and restoration of our natural world. 
-        The day also recognizes the efforts and achievements of individuals, communities, and organizations that are working to 
-        create a greener future.`,
+        description: "The UN's flagship day for global environmental action, driving systemic restoration of our natural ecosystems.",
         links: [{
             label: "worldenvironmentday.global",
-            Value: "https://www.worldenvironmentday.global/"
+            value: "https://www.worldenvironmentday.global/"
         }]
     },
     {
         date: "6 June",
         day: "World Green Roof Day",
-        description: `Green roofs are important for climate change adaptation, biodiversity, urban greening, and well-being. 
-        Green roofs are nature’s allies in the fight against climate change. They soothe the scorching heat, save money and energy, 
-        soak up the rain, store the carbon, shelter the wildlife, and uplift the mood. `,
+        description: "Advocating for urban green infrastructure to reduce city heat, absorb carbon, and manage rainwater runoff.",
         links: [
             {
                 label: "worldgreenroofday.com",
-                Value: "https://worldgreenroofday.com/"
+                value: "https://worldgreenroofday.com/"
+            }
+        ]
+    },
+    {
+        date: "7 June",
+        day: "World Food Safety Day",
+        description: "Enforcing rigorous biological and chemical standards across supply chains to prevent foodborne illness and toxic contamination.",
+        links: [
+            {
+                label: "foodsafetyday.org",
+                value: "https://foodsafetyday.org/"
             }
         ]
     },
     {
         date: "8 June",
         day: "World Oceans Day",
-        description: `A healthy ocean is a critical part of the solution to the climate and biodiversity crises, and protecting at 
-        least 30% of our lands, waters, and ocean by 2030 (30x30) is necessary to give the planet a chance to recover and protect 
-        millions of species from extinction. By supporting this 30×30 project, together we can protect our planet’s life support 
-        systems – specifically the interconnected issues of ocean, climate, and biodiversity.`,
+        description: "Mobilizing the global '30x30' movement to protect 30% of our lands and waters by 2030 to prevent mass extinction.",
         links: [
             {
                 label: "worldoceansday.org",
-                Value: "https://worldoceansday.org/"
+                value: "https://worldoceansday.org/"
             }
         ]
     },
     {
         date: "15 June",
         day: "Nature Photography Day",
-        description: `Nature Photography Day is a fun holiday that celebrates the art and joy of capturing the beauty of nature 
-        through cameras. The day aims to raise awareness of the importance of nature photography for the conservation and protection 
-        of plants, wildlife, and landscapes. The day also encourages people to explore and enjoy nature through their lenses and share 
-        their images with others.`,
+        description: "Leveraging the power of visual storytelling to inspire global conservation efforts for wildlife and landscapes.",
         links: []
     },
     {
         date: "16 June",
         day: "World Sea Turtle Day",
-        description: `Sea turtles help maintain the health of seagrass beds and coral reefs that benefit commercially valuable species 
-        such as shrimp, lobster, and tuna. Turtles seem to prefer red, orange and yellow-coloured food. They appear to investigate these 
-        colours more than others when looking for a meal. So reducing marine plastic pollution is critical to saving turtles.`,
-        links: []
+        description: "Fighting marine plastic pollution to protect keystone species vital to the health of seagrass beds and coral reefs.",
+        links: [
+            {
+                label: "seaturtleweek.com",
+                value: "https://www.seaturtleweek.com/world-sea-turtle-day"
+            }
+        ]
     },
     {
         date: "16 June",
         day: "Fresh Veggies Day",
-        description: `Fresh Veggies Day is a day to celebrate the nutritional value and health benefits of fresh vegetables. 
-        It aims to create awareness about the importance of consuming fresh vegetables for metabolism, growth, development, 
-        and disease prevention. The day also encourages people to visit local farmers’ markets, grow their own vegetables, 
-        or try new recipes with fresh veggies`,
+        description: "Highlighting the critical metabolic and health benefits of clean, locally grown, sustainable whole foods.",
         links: []
     },
     {
         date: "17 June",
         day: "World Day to Combat Desertification and Drought",
-        description: `Every second, an equivalent of four football fields of healthy land becomes degraded. This adds up to a total of 100 million hectares each year.
-        With 40% of the world’s land already degraded, urgent action is needed to restore ecosystems and ensure sustainable land management.`,
-        links: []
+        description: "Addressing a critical crisis: 40% of the world's land is already degraded, with 100 million hectares lost annually.",
+        links: [
+            {
+                label: "unccd.int",
+                value: "https://www.unccd.int/events/desertification-drought-day"
+            }
+        ]
     },
     {
         date: "18 June",
         day: "Sustainable Gastronomy Day",
-        description: `Sustainable Gastronomy Day is a day to celebrate and promote sustainable food practices that respect 
-        the environment, culture, and health. It aims to raise awareness about the importance of sustainable gastronomy for 
-        achieving the Sustainable Development Goals (SDGs) and to encourage people to enjoy and share their culinary traditions.`,
+        description: "Championing localized food supply chains, waste reduction, and culinary practices that respect the environment.",
         links: []
     },
     {
         date: "21 June",
         day: "World Giraffe Day",
-        description: `Giraffes help regulate the growth of plants, disperse seeds, create habitats for other animals, 
-        and provide food for predators and scavengers. Their presence or absence can signal changes in vegetation, climate, 
-        and wildlife populations. They are threatened by habitat loss, civil unrest, illegal hunting, and ecological changes in their natural range. `,
+        description: "Securing the future of a vulnerable keystone species threatened by poaching and rapid habitat fragmentation.",
         links: [
             {
                 label: "giraffeconservation.org",
-                Value: "https://giraffeconservation.org/world-giraffe-day/"
+                value: "https://giraffeconservation.org/world-giraffe-day/"
             }
         ]
     },
     {
         date: "22 June",
         day: "World Rainforest Day",
-        description: `Rainforests are beneficial for the planet because they are carbon sinks, water factories, biodiversity hotspots, 
-        medicine cabinets, and cultural treasures. Rainforests are threatened by deforestation, poaching, climate change, and fires 
-        that harm their ecosystems and the planet. To save rainforests, we need to use their resources wisely, support ecotourism, 
-        regulate their exploitation, and advocate for their protection.`,
+        description: "Defending global carbon sinks and biological hotspots against deforestation, fires, and climate collapse.",
         links: [
             {
                 label: "worldrainforestday.org",
-                Value: "https://worldrainforestday.org/"
+                value: "https://worldrainforestday.org/"
             }
         ]
     }
