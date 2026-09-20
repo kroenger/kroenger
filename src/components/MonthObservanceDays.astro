@@ -1,0 +1,38 @@
+---
+import ObservanceDayNew from "./ObservanceDayNew.astro";
+import type { ObservanceDay } from "../utils/observanceDays";
+
+interface Props {
+  days: ObservanceDay[];
+}
+
+const { days } = Astro.props;
+---
+
+<div class="observanceDaysGrid">
+  {
+    days.map((observanceDay) => (
+      <ObservanceDayNew
+        date={observanceDay.date}
+        day={observanceDay.day}
+        description={observanceDay.description}
+      />
+    ))
+  }
+</div>
+
+<style>
+  .observanceDaysGrid {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    margin-bottom: 4rem;
+  }
+
+  /* Small screens */
+  @media only screen and (max-width: 600px) {
+    .observanceDaysGrid {
+      margin: 5%;
+    }
+  }
+</style>

@@ -1,96 +1,42 @@
 ---
 import Social from "../../components/Social.astro";
 import Layout from "../../layouts/Layout.astro";
-import { april } from "../../observanceDaysData/april";
-import { august } from "../../observanceDaysData/august";
-import { december } from "../../observanceDaysData/december";
-import { february } from "../../observanceDaysData/february";
-import { january } from "../../observanceDaysData/january";
-import { july } from "../../observanceDaysData/july";
-import { june } from "../../observanceDaysData/june";
-import { march } from "../../observanceDaysData/march";
-import { may } from "../../observanceDaysData/may";
-import { november } from "../../observanceDaysData/november";
-import { october } from "../../observanceDaysData/october";
-import { september } from "../../observanceDaysData/september";
+import {
+  months,
+  allObservanceDays,
+  getObservanceDayId,
+} from "../../utils/observanceDays";
 
 export function getStaticPaths() {
-  const datas = [
-    january,
-    february,
-    march,
-    april,
-    may,
-    june,
-    july,
-    august,
-    september,
-    october,
-    november,
-    december,
-  ];
-
-  const mergedData = datas.flat();
-
-  const paths = mergedData.map((data) => {
-    let dayId = data.day.trim().toLowerCase().split(" ").join("-");
-    let dateId = data.date.split(" ").join("-").toLowerCase();
-    return {
-      params: {
-        id: `${dayId}-${dateId}`,
-      },
-    };
-  });
+  const paths = allObservanceDays.map((data) => ({
+    params: {
+      id: getObservanceDayId(data),
+    },
+  }));
   return [...paths];
 }
 
 const { id } = Astro.params;
 
-const datas = [
-  january,
-  february,
-  march,
-  april,
-  may,
-  june,
-  july,
-  august,
-  september,
-  october,
-  november,
-  december,
-];
+const pageData = allObservanceDays.find(
+  (data) => getObservanceDayId(data) === id
+);
 
-const mergedData = datas.flat();
+// The month this observance day belongs to
+const month = months.find((m) => m.days.includes(pageData as any));
 
-const pageDataArray = mergedData
-  .map((data) => {
-    let dayId = data.day.trim().toLowerCase().split(" ").join("-");
-    let dateId = data.date.split(" ").join("-").toLowerCase();
-    if (id === `${dayId}-${dateId}`) {
-      return { ...data, dayId };
-    }
-  })
-  .filter(Boolean);
-
-const pageData = pageDataArray[0];
-
-// next item
-const nextItem = mergedData
-  .map((data, index) => {
-    let dayId = data.day.trim().toLowerCase().split(" ").join("-");
-    let dateId = data.date.split(" ").join("-").toLowerCase();
-    if (id === `${dayId}-${dateId}`) {
-      if (index === mergedData.length - 1) {
-        return {day: mergedData[0].day, dayId: `${mergedData[0].day.trim().toLowerCase().split(" ").join("-")}-${mergedData[0].date.split(" ").join("-").toLowerCase()}`};
-      }
-
-      let nextDayId = mergedData[index + 1].day.trim().toLowerCase().split(" ").join("-");
-      let nextDateId = mergedData[index + 1].date.split(" ").join("-").toLowerCase();
-      return {day: mergedData[index + 1].day, dayId: `${nextDayId}-${nextDateId}`};
-    }
-  })
-  .filter(Boolean);
+// next item within the same month (wraps around within the month)
+const monthDays = month?.days ?? [];
+const currentIndex = monthDays.findIndex(
+  (data) => getObservanceDayId(data) === id
+);
+const nextDay =
+  monthDays.length > 0
+    ? monthDays[(currentIndex + 1) % monthDays.length]
+    : undefined;
+const nextItem = nextDay
+  ? [{ day: nextDay.day, dayId: getObservanceDayId(nextDay) }]
+  : [];
 
 let createdImagePath = pageData?.day.trim().toLowerCase().split(" ").join("-");
 let completeCreatedImagePath = `../../../public/days/${createdImagePath}.png`;
@@ -186,7 +132,7 @@ const structuredData = {
             </h3>
             <div class="flex flex-wrap gap-2 my-4">
               {
-                pageData?.links.map((link) => (
+                pageData?.links?.map((link) => (
                   <a
                     href=`${link.value}?utm_source=kroenger.org`
                     target="_blank"

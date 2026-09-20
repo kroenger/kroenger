@@ -1,0 +1,98 @@
+---
+import MonthObservanceDays from "../../components/MonthObservanceDays.astro";
+import Social from "../../components/Social.astro";
+import Layout from "../../layouts/Layout.astro";
+import {
+  months,
+  getMonthBySlug,
+  getNextMonth,
+  getPreviousMonth,
+} from "../../utils/observanceDays";
+
+export function getStaticPaths() {
+  return months.map((month) => ({
+    params: { month: month.slug },
+  }));
+}
+
+const { month: monthSlug } = Astro.params;
+const month = getMonthBySlug(monthSlug ?? "")!;
+const previousMonth = getPreviousMonth(month);
+const nextMonth = getNextMonth(month);
+---
+
+<Layout
+  title={`${month.name} Observance Days`}
+  description={`Environmental and sustainability observance days in ${month.name}. Explore ${month.days.length} important days worth celebrating.`}
+  activePage="calendar"
+>
+  <div class="p-4 lg:ml-24 sm:mb-16 lg:mb-0">
+    <article>
+      <h1 class="text-center font-bold text-3xl md:text-5xl mt-8">
+        {month.name} Observance Days
+      </h1>
+      <p class="text-center text-md lg:text-xl xl:text-2xl mt-2">
+        Don't miss the important environmental days in {month.name}.
+        <br />
+        In case you did, we're here to remind you 💚
+      </p>
+
+      <h3 class="text-center cursor-pointer mt-4 text-lg lg:text-xl xl:text-2xl">
+        <a
+          href="/observance-days-api"
+          class="text-secondary no-underline hover:text-primary"
+          >Observance Days API</a
+        >
+      </h3>
+
+      <br />
+
+      <div class="flex justify-center gap-4 mt-4 mb-8">
+        <a
+          href={`/calendar/${previousMonth.slug}`}
+          class="text-secondary hover:text-primary font-semibold"
+        >
+          ← {previousMonth.name}
+        </a>
+        <a
+          href={`/calendar/${nextMonth.slug}`}
+          class="text-secondary hover:text-primary font-semibold"
+        >
+          {nextMonth.name} →
+        </a>
+      </div>
+
+      <MonthObservanceDays days={month.days} />
+
+      <nav class="mx-4 mb-12" aria-label="Other months">
+        <h2 class="text-xl md:text-3xl font-semibold mb-4">Other months</h2>
+        <ul class="flex flex-wrap gap-x-6 gap-y-2 font-bold">
+          {
+            months.map((m) => (
+              <li>
+                <a
+                  href={`/calendar/${m.slug}`}
+                  class={
+                    m.slug === month.slug
+                      ? "text-primary"
+                      : "text-secondary hover:text-primary"
+                  }
+                  aria-current={m.slug === month.slug ? "page" : undefined}
+                >
+                  {m.name}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+
+      <br />
+      <br />
+
+      <div>
+        <Social />
+      </div>
+    </article>
+  </div>
+</Layout>
